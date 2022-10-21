@@ -8,9 +8,10 @@ ctrl + A + D
 screen -ls
 
 ### 恢复
+```Shell
 screen -r "name"
-
-
+```
+```text
 -A 　将所有的视窗都调整为目前终端机的大小。
 -d <作业名称> 　将指定的screen作业离线。
 -h <行数> 　指定视窗的缓冲区行数。
@@ -23,3 +24,4 @@ screen -r "name"
 -x 　恢复之前离线的screen作业。
 -ls或--list 　显示目前所有的screen作业。
 -wipe 　检查目前所有的screen作业，并删除已经无法使用的screen作业。
+```

@@ -1,15 +1,15 @@
 查看系统配置：
+```Shell
 cat /proc/cpuinfo
-
-
+```
 ## sftp
 ### 基本操作
 1. 连接
 指定密钥和端口
+```Shell
 sftp -P 99 -oIdentityFile=deming_rsa deming@192.168.111.137
-
+```
 2. 下载
-
 
 # 文件自动下载
 ```shell

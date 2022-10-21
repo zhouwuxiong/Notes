@@ -1,0 +1,11 @@
+#~/.ssh/config
+Host server77
+  HostName 192.168.111.36
+  Port 77
+  IdentityFile ~/.ssh/fjf_new_rsa
+  User fjf
+
+Host gitee
+HostName gitee.com
+User zhouwuxiong-dominant-tech
+IdentityFile ~/.ssh/id_rsa_dominant

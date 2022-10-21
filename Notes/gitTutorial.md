@@ -133,7 +133,7 @@ git checkout master
    git mv -k            //跳过重名文件和出错文件
 
 ## 删除文件
-1）
+1）仅仅删除远程分支文件，不删除本地文件
    git rm -r cached "name"
    git commit -m "delete *"
    git push "sever name" "branch name"
@@ -141,11 +141,11 @@ git checkout master
 
 ## git用户管理
 git 的配置分为三级别，System —> Global —>Local。System 即系统级别，Global 为配置的全局，Local 为仓库级别，优先级是 Local > Global > System。
-
-全局用户 global   
+```
+全局用户 global   ~/.gitconfig
 系统用户 system   /etc/gitconfig
-局部过户 Local   .git/config
-
+局部用户 Local   .git/config
+```
 在执行git config命令时，通过 --global 指定操作哪个配置文件
 
 ### 管理用户信息
@@ -160,7 +160,7 @@ git config --list
    git config --unset user.name  
 
 
-### 本地多用户
+### git本地多用户
 在本地配置多个git用户，区分每个用户使用的密钥
 https://blog.csdn.net/yuanlaijike/article/details/95650625
 
@@ -196,5 +196,25 @@ IdentityFile ~/.ssh/id_rsa_domain
 ```
 2. 测试连接
    ssh -T git@gitee.com
+
+##### 设置密码保存
+https的url方式每次push的时候都要输入密码，比较麻烦，一般就会用credential.helper把账号密码缓存到本地。
+1. 查看git配置文件的信息
+2. 删除global或system中的密码
+   git config --global --unset credential.helper
+3. 设置local中的密码
+   git config --local credential.helper store
+
 注：
    - 当首次ssh链接服务器时，服务器会下发公钥，本地将公钥存储在known_hosts文件中，下次ssh服务器时，会将服武器下发的公钥与本地known_hosts中的公钥进行比对。避免本地主机受到DNS Hijack（DNS劫持）之类的攻击。并且在本地主机首次 ssh -T 时也会提示，是否信任服务器的链接。
+
+注：
+   git的凭证存储方式：
+   - cache，存储在内存中，15分钟后清除
+   - store  密码会以明文的方式存储在~/.git-credentials中
+   - osxkeychain mac 存储在系统文件中，有系统管理
+   - manageer windwos 通上
+
+注：
+   多用户场景下，store模式会产生冲突，因为如果你设置了.git-credentials=store时，git会使用~/.git-credentials中的密码直接登录，而不会判断是否为当前用户的密码，因此如果你发现git无法登录， 且./git/config中记录的信息正常时，你可能就需要检查~/.git-credentials，看看是否使用了其它的用户名和密码。
+   （这种多用户冲突在使用浏览器登录时也会发生）

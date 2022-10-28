@@ -25,3 +25,18 @@ screen -r "name"
 -ls或--list 　显示目前所有的screen作业。
 -wipe 　检查目前所有的screen作业，并删除已经无法使用的screen作业。
 ```
+
+## 批量删除screen窗口
+```Shell
+# 1. 查看窗口个数
+screen -ls |awk '/Socket/'|awk '{print $1}'
+
+# 2. 如果有20个screen，关闭所有screen
+screen -ls|awk 'NR>=2&&NR<=20{print $1}'|awk '{print "screen -S "$1" -X quit"}'|sh
+
+# 3. 关闭包含关键字的screen
+screen -ls|awk '{print $1}'|grep "Bicocca"|awk '{print "screen -S "$1" -X quit"}'|sh
+
+# 4. 将(3)包装成shell命令
+echo screen -ls|awk '{print $1}'|grep $1|awk '{print "screen -S "$1" -X quit"}'|sh >> ~/.bashrc
+```

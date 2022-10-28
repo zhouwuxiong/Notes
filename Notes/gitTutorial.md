@@ -149,7 +149,9 @@ git checkout master
 ```
 ## Git排除目录
 ### 单个工程
-echo *.tar>>.gitignore
+```shell
+echo *.tar>>ProjectsRootPath/.gitignore
+```
 或者直接编辑
 ```text
 # temp ignore

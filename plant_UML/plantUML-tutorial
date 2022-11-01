@@ -52,6 +52,18 @@ Note right of 领导: 首长复杂的内心活动
 战士->>领导: 为人民服务
 ```
 
+```PlantUML
+@startuml
+header Page Header
+footer Page %page% of %lastpage%
+
+title Example Title
+
+Alice -> Bob : message 1
+Alice -> Bob : message 2
+@enduml
+```
+
 ### 甘特图
 ```mermaid
 gantt

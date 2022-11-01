@@ -17,8 +17,34 @@ np.where(np.in1d(A, B))[0]
 A[np.where(np.in1d(A, B))[0]]
 ```
 示例：
-查找A=[[KF, F]]
+datas=[[KF, F]]
+datav=[[KF, F]]
+在datas和datasv中查找F相同的KF
 ```python
 datas[np.where(np.in1d(datas[:, 1], datav[:, 1]))][:, 0]
 ```
 
+## 获取变量名
+```python
+import inspect
+
+def retrieve_name(var):
+    callers_local_vars = inspect.currentframe().f_back.f_locals.items()
+    return [var_name for var_name, var_val in callers_local_vars if var_val is var]
+
+name, address, age, gender = "bob", "hangzhou", 21, "man"
+person = {}
+
+for i in [name, address, age, gender]:
+    person[retrieve_name(i)[0]] = i
+
+print person
+```
+
+## python设置输出编码
+```python
+import sys
+import io
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+```

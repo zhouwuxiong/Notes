@@ -10,3 +10,16 @@ np.savetxt('data_name‘, data.view(-1, 1), fmt='%.04f')   #保留4位小数
 ``` python
 np.set_printoptions(threshold=np.inf)
 ```
+2. np 调整精度
+```
+A = np.around(A,decimals=3)
+```
+
+## np 矩阵乘法
+```python
+# 叉乘、外积
+tf.matmul(A,C)=np.dot(A,C)= A@C
+# 点乘、内积
+tf.multiply(A,C)= A*C=A∙C
+```
+![numpy矩阵乘法](./assets/np%20matrix%20multiply.png)

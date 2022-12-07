@@ -202,3 +202,13 @@ gdb后, 用bt命令**backtrace**或**where**查看程序运行到哪里, 来定�
 　　运行进程至crash
 　　gdb会显示crash信息
 　　bt
+
+
+## vscode中使用gdb
+在使用其它 IDE 调试的时候，有时候仅仅使用 IDE 提供的调试按钮不能满足我们的需求，这时候我们会直接在 IDE 提供的 Console 中输入 LLDB/GDB 指令，进行细粒度的控制。但是 VsCode 不像其他 IDE 可以直接输入 LLDB/GDB 指令，VsCode 需要使用 `-exec` 作为前缀来执行调试命令。例如想要打印变量 `v`，输入 `-exec p v` 就可以执行 LLDB/GDB 的 `p v`指令了。
+
+vscode中如果只想打印变量的值，直接输入变量名即可。例如`this`,或者`*this`查看变量中的成员
+
+[vscode 配置gdb调试](https://blog.csdn.net/weixin_42145502/article/details/107455999)
+
+[《100个gdb小技巧》](https://wizardforcel.gitbooks.io/100-gdb-tips/content/info-frame.html)

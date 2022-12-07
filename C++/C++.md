@@ -125,3 +125,29 @@ srand() 用来设置 rand() 产生随机数时的随机数种子。参数 seed �
 - returncode = 0    正常退出
 - returncode < 0    记录接收到的退出信号
 - returncode > 0    程序执行异常
+
+
+## NaN 和 INF
+NaN: not a number，表示“无效数字”。
+INF：infinite，表示“无穷大”。
+
+[NaN和INF产生的原因]https://blog.csdn.net/wokaowokaowokao12345/article/details/72846436/
+
+注意：
+  NaN 会在执行一些非法数学运算后产生，例如：1/0、sqrt(-1)等。
+  变量未初始化时，不会为 NaN，因为在栈内存在分配时会自动初始化，new 分配的也会初始化，malloc 分配的内存不会初始化，但是应该为随机值，而不应该为 NaN。
+## 判断 NaN 和 INF
+
+1. 使用表达式判断 （`nan！=nan`）为 True，即只有当f为 NaN 时 `f!=f`为 True ，但是表达式容易被编译器优化
+
+- NaN 是无序的（unordered），无法对其进行逻辑运算。它不大于、小于或等于任何数（包括它自己），将<，>，<=，和>=作用于nan产生一个exception。得到nan时就查看是否有非法操作，如果表达式中含有nan，那么表达式的结果为nan。
+
+- +inf大于任何数（除了它自己和nan），-inf小于任何数（除了它自己和nan），得到inf时就查看是否有溢出或者除以0。inf在C语言表达式中就表示数学里无限的概念，如1.0/inf等于0.0，并可以与其他浮点数进行比较的（可以参与<=、>+、==、!=等运算）。
+
+1. 下面几个宏即包含在math.h头文件，可用于判断一个表达式的结果是否为inf、nan
+```C++
+int isfinite(x);
+int isnormal(x);
+int isnan(x);
+int isinf(x);
+```

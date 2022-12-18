@@ -10,6 +10,7 @@
 
 using namespace std;
 
+//
 static bool RandomInt(int min, int max)
 {
     int d = max - min + 1;
@@ -29,6 +30,7 @@ static bool RandomVector(std::vector<int> &v)
     return true;
 }
 
+// 序列随机，每次执行，都会得到相同的随机结果，
 static bool RandomInt_2()
 {
     srand((unsigned)time(NULL));

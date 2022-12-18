@@ -5,6 +5,7 @@ linux 三剑客功能:
 grep ： 过滤文本
 sed  :  修改文本
 awk  :  处理文本
+地
 
 ### 参数
 -F 指定分隔符
@@ -40,6 +41,33 @@ FS 指定文本内容分隔符(默认是空格)
 	+		: 右对齐
 	15		: 至少占用15字符
 ```
+
+## diff
+diff可用于比较文件内容和目录中文件的差异
+### 参数
+参数 | 简写参数| 描述
+|-r | 递归比较子目录
+|-text | 逐行比较文本文件
+|-B | 不检查空行
+|-w | 不比较空格（忽略空格）
+exclude | -x | 排除文件
+-side-by-side | -y | 并列显示文件的异同
+--suppress-common-lines| | 仅显示不同
+--ignore-case| -i	| 忽略大小写
+--new-file|-N| 显示不同文件名的文件
+--unidirectional-new-file | -P	| 将只在一个不目录中存在的文件与空白文件比较
+### 实例
+```shell
+# 递归比较目录中 同名文件 的内容差异
+diff dir1 dir2 -r 
+# 并列显示不同的内容
+diff dir1 dir2 -y --suppress-common-lines
+# 逐行比较文本文件，
+diff dir1 dir2 --text -B -b
+# 每隔2s进行一次比较
+watch -n 2 'diff dir1 dir2 -y --suppress-common-lines'
+```
+[文件/目录对比：diff命令](https://www.cnblogs.com/amyzhu/p/13466049.html)
 
 ## 实例
 ### 每隔5行，打印一行横线

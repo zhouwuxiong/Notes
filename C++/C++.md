@@ -151,3 +151,38 @@ int isnormal(x);
 int isnan(x);
 int isinf(x);
 ```
+
+## C++如何利用成员函数修改this指针的值
+在使用boost进行save和load时，需要在load()获取内存对象地址后，再进行恢复。而load()函数必须使用实例对象调用，因此考虑传入，修改实例中的this指针，指向内存中的对对象，实现修改的目的。
+
+[C++如何利用成员函数修改this指针的值](https://blog.csdn.net/qq_37232329/article/details/126520957)
+
+## C/C++ 函数的调用约定
+## 
+- __cdecl C 调用
+它是 C/C++函数默认的调用规范，C/C++运行时库中的函数基本都是__cdecl 调用。在该调用约定下，参数从右向左依次压入栈中，由主调函数负责清理参数的栈空间。该调用约定适用于支持可变参数的函数，因为只有主调函数才知道给该种函数传递了多少个参数，才知道应该清理多少栈空间。比如支持可变参数的 C 函数 printf：
+
+-  __stdcall 标准调用
+Windows 系统提供的系统 API 函数的调用约定
+
+-  __stdcall 标准调用
+该调用约定之所以被称作为快速调用，因为有部分参数可以通过寄存器直接传递，效率比较高。对于内存大小小于等于 4 字节的参数，直接使用 ECX 和 EDX 寄存器传递，剩余的参数则依次从右到左压入栈中通过栈传递，参数传递占用的栈空间由被调用函数清理。
+
+[C/C++ 函数的调用约定详解](https://xie.infoq.cn/article/5fd35e4b7fc65b59185a8eabc)
+
+[Linux和Win平台下函数调用参数传递约定详解](https://blog.csdn.net/weixin_46222091/article/details/114698551)
+
+### 指定调用约定
+Windows
+```C++
+int __stdcall func()
+```
+
+linux
+```C++
+int __attribute__((__stdcall__)) func()
+```
+
+[GCC attribute 扩展](http://gcc.gnu.org/onlinedocs/gcc-4.6.0/gcc/Function-Attributes.html#Function-Attributes)
+
+[调用约定的通用参考](http://en.wikipedia.org/wiki/X86_calling_conventions)

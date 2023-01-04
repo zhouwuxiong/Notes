@@ -360,3 +360,39 @@ HEAD可以用来替换commit_id，HEAD指向的版本是当前版本，上一个
 
 ### git revert
 git revert是用于“反做”某一个版本，以达到撤销该版本的修改的目的。比如，我们commit了三个版本（版本一、版本二、 版本三），突然发现版本二不行（如：有bug），想要撤销版本二，但又不想影响撤销版本三的提交，就可以用 git revert 命令来反做版本二，生成新的版本四，这个版本四里会保留版本三的东西，但撤销了版本二的东西。
+
+
+## 本地分支与远程分支合并
+```shell
+# 1. 查看关联的远程仓库
+git remote -v
+# 2. 下载远程分支代码到本地分支
+git fetch origin master:temp
+# 3. 查看temp分支与本地原有分支的不同
+git diff temp
+# 4. 将temp分支和本地分支合并
+git merge temp
+# 5. 消除冲突
+# 6. 删除 temp 分支
+git branch -d temp
+```
+git fetch 从远程分支拉取代码，常结合merge一起用，`git fetch + git merge == git pull`，git pull 需要先解决冲突再进行拉取代码。常见的 git pull 冲突解决方法有：
+1. 暂存本地修改
+```
+1、git pull  //提示冲突后
+2、git stash //放暂存区
+3、git pull //成功拉下代码
+4、git stash pop //将暂存区的代码还原，会提示代码冲突，解决冲突代码的文件
+5、git add .  //重新提交一次
+6、git commit -m "冲突"
+7、git push  
+```
+2. 忽略本地修改，强制使用远程分支覆盖本地分支（代码修改较少）
+git reset --hard origin/dev
+3. 回退本地代码到未修改的版本（代码修改较少）
+git reset
+4. 冲突解决
+
+
+[git pull时冲突的几种解决方式](https://www.cnblogs.com/zjfjava/p/10280247.html)
+

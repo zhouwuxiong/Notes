@@ -186,3 +186,37 @@ int __attribute__((__stdcall__)) func()
 [GCC attribute 扩展](http://gcc.gnu.org/onlinedocs/gcc-4.6.0/gcc/Function-Attributes.html#Function-Attributes)
 
 [调用约定的通用参考](http://en.wikipedia.org/wiki/X86_calling_conventions)
+
+## 构造函数的初始化列表
+1. 初始化顺序和初始化列表列出的顺序无关，只与它在类中声明顺序有关
+2. 对象的成员变量的初始化动作发生在进入构造函数本体之前
+3. 构造函数中手动赋值需要调用默认构造函数和拷贝构造函数，初始化列表只调用默认构造函数，效率更高
+
+### 初始化列表的使用情况
+1. const 成员
+2. 引用成员
+3. 类中包含另外一个类作为成员变量，且被包含的类有有参构造函数，没有无参构造函数（编译器无法调用默认构造函数进行初始化）
+4. 两个类有继关系,父类没有显示声明无参构造数,但声明了有参数构函数（无参的默认构造函数被覆盖）
+
+### 默认够找函数与自定义构造函数
+1. 默认构造函数可以被编译器隐式调用，而自定义构造函数需要用户显示调用。这些情况包括：
+  - 在子类的构造函数中，显示调用基类的自定义构造函数
+  - 在子类的复制构造函数中，调用成员变量中包含类的自定义构造函数（如果有显示定义）
+  - 子类析构函数中显示调用基类的析构函数（如果有显示定义）
+  - C++11 移动函数 ...
+### 
+
+[C++中必须用参数列表初始化的4种情况](https://blog.csdn.net/weixin_42769044/article/details/103348669)
+
+
+## string
+   C++的string是对C字符串的类封装，它们都占用连续的内存（对于存储数据而言）。
+### string 的内存占用
+1. 字符串的长度小于24字节时分配在栈空间，大于24字节时分配在堆空间，并在栈中记录堆中的地址。
+2. 由于字符串的内存是连续的，因此字符串每次相加时会重新申请内存。
+3. +=、append、stringstream、sprintf四种方式在消耗的时间大致为1：1：4：2(见参考）
+
+[C/C++指针与字符串](https://www.jianshu.com/p/6469fad4d5d5)
+[C++ 中 std::string 的内存布局](https://zhuanlan.zhihu.com/p/510507837)
+[C++的string-两手抓的内存分配](https://zhuanlan.zhihu.com/p/187499607)
+[C++字符串拼接效率比较(+=、append、stringstream、spintf)](https://blog.csdn.net/mijichui2153/article/details/118154341)

@@ -1,10 +1,9 @@
 ## 打印函数调用栈
 ### 适用条件
-1. 当某个函数被多个函数调用时，例如：构造函数
+1. 当某个函数被多个函数调用时，查看函数的调用者。例如：构造函数、析构函数
 2. 项目中存在很多重名函数时，例如：重载函数
 3. 没有 GDB 环境
-4. 代码逻辑错误，难以定位
-定位函数的调用者
+4. 代码逻辑错误，难以定位函数的调用者
 
 ### 
 ```C++
@@ -35,6 +34,24 @@ void print_stacktrace()
     }
     free(stacktrace);
 }
+```
+2. 使用 lambda 函数，做到即插即用
+```C++
+#include<execinfo.h>
+
+...
+
+auto print_stacktrace = [](){    int size = 16;
+    void * array[16];
+    int stack_num = backtrace(array, size);
+    char ** stacktrace = backtrace_symbols(array, stack_num);
+    for (int i = 0; i < stack_num; ++i)
+    {
+        printf("%s\n", stacktrace[i]);
+    }
+    free(stacktrace);
+    };
+print_stacktrace();
 ```
 
 

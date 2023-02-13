@@ -1,0 +1,22 @@
+#~/.ssh/config
+Host 192.168.111.225
+  HostName 192.168.111.225
+  Port 66
+  IdentityFile titanx_fjf_rsa
+  User fjf
+
+Host server77
+  HostName 192.168.111.36
+  Port 77
+  IdentityFile ~/.ssh/fjf_new_rsa
+  User fjf
+
+Host gitee-domi
+HostName e.gitee.com
+User zhouwuxiong-dominant-tech
+IdentityFile ~/.ssh/id_rsa_dominant
+
+Host gitee-zwx
+HostName gitee.com
+User zhouwuxiong-dominant
+IdentityFile ~/.ssh/id_rsa_dominant

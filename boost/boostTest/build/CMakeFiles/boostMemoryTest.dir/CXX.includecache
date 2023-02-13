@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zwx/Notes/boost/boostTest/boostMemoryTest.cpp
+boost/archive/text_oarchive.hpp
+-
+boost/archive/text_iarchive.hpp
+-
+iostream
+-
+sstream
+-
+

@@ -1,94 +1,111 @@
 @startuml
 !pragma useVerticalIf on
 start
-    if ( KeyFramesWaitCheck 为空？ ) then (yes)
-    : 提取 KeyFramesWaitCheck 中的待检查关键帧到 KeyFramesWaitCheck ，
-      并清空 KeyFramesWaitCheck]
-    else (继续存储数据)
-    endif
-  
-    : KeyFramesWaitCheck.pop_front()]
-    : 检查关键帧是否可存储,并将可以存储的关键帧保存到 vpDeleteKFs]
-    : 将 vpDeleteKFs 中关键帧对应的地图点加入 vpDeleteMPs]
+    #hotpink:while(1);
 
-    if (待存储地图点都不在局部地图中
-        并且系统运行未结束) then (no)
-        '#hotpink: goto while(1) ;
-        'detach
-    else (yes)
-      if (保存分块地图？) then (yes)
-        : 将 vpDeleteMPs 中的添加到 mMapPointBlockTemp 中对应的块]
-  
-        : 加载已存储的地图点块到 mMapPointBlockLoading ,并将 mMapPointBlockLoading
-          中的地图点加入 mMapPointBlockTemp 中的地图点块中]   
-        note left
-        new
-        end note
-  
-        : 保存地图点，记录地图点块的表头信息到 mBlockDatabase]
-        
-        : delete mMapPointBlockLoading 中的地图点块和其中的地图点]
-        note right
-        delete
-        end note
-        
-        : 将 vpDeleteKFs 中的添加到 mMapKeyFrameBlockTemp 中对应的块]
-  
-        : 加载已存储的关键帧块和地图点块到 mMapPointBlockLoading 和 mKeyFrameBlockLoading,
-          恢复关键帧块对地图点块的观测信息]
-        note left
-        new
-        end note
-  
-        : 将 mKeyFrameBlockLoading 的关键帧加入 mMapKeyFrameBlockTemp 中的关键帧块中]
-  
-        : 将 mMapKeyFrameBlockTemp 中的关键帧块添加到 mKeyFrameBlockLoading 中,
-          清空 mMapKeyFrameBlockTemp]
-        
-  
-        : 保存 mKeyFrameBlockWaiting 的关键帧块，
-          记录地图点块的表头信息到 mBlockDatabase
-          delete mKeyFrameBlockWaiting 中的关键帧块(不删除其中的关键帧)]
-        
-        : delete mMapPointBlockLoading 中的地图点块和<color:red>其中的地图点]
-        note right
-        delete
-        end note
-  
-        : delete mKeyFrameBlockLoading 中的关键帧块和<color:red>其中的关键帧]
-        note right
-        delete
-        end note
+    if(（KeyFramesWaitCheck 为空？ || KeyFramesWaitCheck 中第一个元素的mnId大于局部地图的关键帧最小mnId） 
+      && SLAM 系统运行未结束) then (yes)
+      : sleep 4s]
+      if ( KeyFramesWaitCheck 为空？ ) then (yes)
+        : 提取 KeyFramesWaitCheck 中的待检查关键帧到 KeyFramesWaitCheck ,
+          并清空 mlKeyFramesWaitCheck]
+      else (继续存储数据)
+      endif
+
+      if(KeyFramesWaitCheck 非空 && KeyFramesWaitCheck 中第一个元素的mnId大于局部地图的关键帧最小mnId) then (yes)
+        : 更新加锁变量 mLocalMinMPId、mLocalMinKFId、mMapMaxKFid]
+        if (KeyFramesWaitCheck 中第一个元素的mnId大于局部地图的关键帧最小mnId) then (yes)
+          #hotpink: goto while(1);
+          detach  
+        else (no)
+        endif
       else (no)
       endif
-      
-      : 将 vpDeleteMPs 中的地图点加入 vpTryDeleteMPs, 
-        并 release vpTryDeleteMPs 中的地图点]
-        note right
-        release 
-        end note
+    else (no)
+    endif
 
-      : 将 vpDeleteKFs 中的关键帧加入 vpTryDeleteKFs 
-        并 release vpTryDeleteKFs 中的部分关键帧]
-        note right
-        release 
-        end note
-      : 更新下一次保持的关键帧窗口的,mStratKeyFrameID += mWindowSize]
-      : 清空 vpDeleteMPs 和 vpDeleteKFs]
+    if (KeyFramesWaitCheck 非空？)then (yes)
+      : KeyFramesWaitCheck.pop_front()]
+      : 检查窗口内的关键帧是否可存储,并将窗口内可以存储的关键帧保存到 vpDeleteKFs]
+      : 将 vpDeleteKFs 中关键帧对应的地图点加入 vpDeleteMPs]
+
+      if (待存储地图点都不在局部地图中
+          并且系统运行未结束) then (no)
+          '#hotpink: goto while(1) ;
+          'detach
+      else (yes)
+        : 统计已存储地图的大小，更新地图是否可以存储的标志 saveBlockMap]
+        if ( 是否保存地图 saveBlockMap = true ? ) then (yes)
+          : 将 vpDeleteMPs 中的添加到 mMapPointBlockTemp 中对应的块]
+    
+          : 加载已存储的地图点块到 mMapPointBlockLoading ,并将 mMapPointBlockLoading
+            中的地图点加入 mMapPointBlockTemp 中的地图点块中]   
+          note left
+          new
+          end note
+    
+          : 保存地图点，记录地图点块的表头信息到 mBlockDatabase]
+          
+          : delete mMapPointBlockLoading 中的地图点块和其中的地图点]
+          note right
+          delete
+          end note
+          
+          : 将 vpDeleteKFs 中的添加到 mMapKeyFrameBlockTemp 中对应的块]
+    
+          : 加载已存储的关键帧块和地图点块到 mMapPointBlockLoading 和 mKeyFrameBlockLoading,
+            恢复关键帧块对地图点块的观测信息]
+          note left
+          new
+          end note
+    
+          : 将 mKeyFrameBlockLoading 的关键帧加入 mMapKeyFrameBlockTemp 中的关键帧块中]
+    
+          : 将 mMapKeyFrameBlockTemp 中的关键帧块添加到 mKeyFrameBlockLoading 中,
+            清空 mMapKeyFrameBlockTemp]
+          
+    
+          : 保存 mKeyFrameBlockWaiting 的关键帧块，
+            记录地图点块的表头信息到 mBlockDatabase
+            delete mKeyFrameBlockWaiting 中的关键帧块(不删除其中的关键帧)]
+          
+          : delete mMapPointBlockLoading 中的地图点块和<color:red>其中的地图点]
+          note right
+          delete
+          end note
+    
+          : delete mKeyFrameBlockLoading 中的关键帧块和<color:red>其中的关键帧]
+          note right
+          delete
+          end note
+        else (no)
+        endif
+
+        : 将 vpDeleteMPs 中的地图点加入 vpTryDeleteMPs, 
+          并 release vpTryDeleteMPs 中的地图点]
+          note right
+          release 
+          end note
+
+        : 将 vpDeleteKFs 中的关键帧加入 vpTryDeleteKFs 
+          并 release vpTryDeleteKFs 中的部分关键帧]
+          note right
+          release 
+          end note
+        : 更新下一次保持的关键帧窗口的,mStratKeyFrameID += mWindowSize]
+        : 清空 vpDeleteMPs 和 vpDeleteKFs]
+      endif
+    else (no)
     endif
 
     if (SLAM系统结束 && Atlas处理完成) then (yes)
-    if ( 保存分块地图？  ) then (yes)
-      : 保存分块数据库 mBlockDatabase]
-    else (no)
-    endif
-    #hotpink: 退出循环]
-    else (no)
-      if(KeyFramesWaitCheck 为空？) then (yes)
-        :sleep(1)]
+      if ( 是否保存地图 saveBlockMap = true ? ) then (yes)
+        : 保存分块数据库 mBlockDatabase]
       else (no)
       endif
-      #hotpink: goto while(1) 开始下一次循环]
+    #hotpink: 退出循环;
+    else (no)
+      #hotpink: goto while(1) 开始下一次循环;
       detach
     endif
   stop

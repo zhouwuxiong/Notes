@@ -250,7 +250,7 @@ IdentityFile ~/.ssh/id_rsa_domain
    ssh -T git@gitee.com
 ```
 ##### 设置密码保存
-https的url方式每次push的时候都要输入密码，比较麻烦，一般就会用credential.helper把账号密码缓存到本地。
+https的url方式每次push的时候都要输入密码，比较麻烦，一般就会用 credential.helper 把账号密码缓存到本地。
 ```shell
 # 1. 查看git配置文件的信息
 # 2. 删除global或system中的密码
@@ -313,7 +313,20 @@ git pull origin dev:dev
 方案二：
 使用 `git diff` 命令比较，但是输出是txt文件，不能一对一文件进行比较
 
-
+### 比较不同版本中的文件
+```C++
+git diff                                       查看尚未暂存的文件更新了哪些部分
+ 
+git diff filename 　　　　　　　　　　　　　　　　　 查看尚未暂存的某个文件更新了哪些
+ 
+git diff –cached                    　　　　　　 查看已经暂存起来的文件和上次提交的版本之间的差异
+ 
+git diff –cached filename 　　　　　　　　　　    查看已经暂存起来的某个文件和上次提交的版本之间的差异
+ 
+git diff ffd98b291e0caa6c33575c1ef465eae661ce40c9 b8e7b00c02b95b320f14b625663fdecf2d63e74c 查看某两个版本之间的差异
+ 
+git diff ffd98b291e0caa6c33575c1ef465eae661ce40c9:filename b8e7b00c02b95b320f14b625663fdecf2d63e74c:filename 查看某两个版本的某个文件之间的差异
+```
 ## 3. 使用远程分支覆盖本地分支
 git fetch --all
 git reset --hard origin/master (这里master要修改为对应的分支名)
@@ -358,10 +371,23 @@ HEAD可以用来替换commit_id，HEAD指向的版本是当前版本，上一个
 
 可以用`git log`可以查看提交历史，或者用`git reflog`查看命令历史，以便确定要切换的版本的版本号。
 
+**Notice**
+```shell
+git reset --soft  ：1.仅在本地版本库移动指针。
+git reset --mixed : 1.移动本地版本库的指针；2.重置暂存区。（默认的参数）
+git reset --hard  : 1.移动本地版本库的指针；2.重置暂存区；3.重置工作区。（可以重新编辑代码）
+```
 ### git revert
 git revert是用于“反做”某一个版本，以达到撤销该版本的修改的目的。比如，我们commit了三个版本（版本一、版本二、 版本三），突然发现版本二不行（如：有bug），想要撤销版本二，但又不想影响撤销版本三的提交，就可以用 git revert 命令来反做版本二，生成新的版本四，这个版本四里会保留版本三的东西，但撤销了版本二的东西。
 
-
+### git checkout
+如果你要在此基础上要进行新的迭代修改，那么就需要将这个版本升级成为一个单独的分支，以此作为媒介进行新一轮的迭代。
+```shell
+# 查看当前分支状态
+git branch
+# 创建并切换到新分支
+git switch -c [branch name]
+```
 ## 本地分支与远程分支合并
 ```shell
 # 1. 查看关联的远程仓库
@@ -393,6 +419,118 @@ git reset --hard origin/dev
 git reset
 4. 冲突解决
 
+### 合并不同分支中的单个文件
+git checkout --patch
 
 [git pull时冲突的几种解决方式](https://www.cnblogs.com/zjfjava/p/10280247.html)
 
+## 删除远程提交到远程仓库中的某个历史版本
+1. git revert HEAD
+revert是放弃指定提交的修改，但是会生成一次新的提交。
+2. git reset --hard HEAD^
+放弃最后一次提交
+3. git rebase 
+删除或修改历史某次提交，需要注意的是，在执行rebase命令对指定提交修改或删除之后，该次提交之后的所有提交的”commit id”都会改变。
+
+## commit 信息合并
+1. git commit --amend
+将当前修改合并到上次 commit
+2. git commit --amend -m "new commit"
+将当前修改合并到上次 commit，并修改commit注释
+
+
+## 清理误上传的文件
+项目开发初期由于.gitignore 文件配置不正确很有可能导致某些不需要的目录上传到 git 远程仓库上了，这样会导致每个开发者提交的时候这些文件每次都会不同。除了一开始提交的时候注意配置好 .gitignore 文件外，我们也需要了解下出现这种问题后的解决办法。
+```shell
+# 预览删除（可以防止删除后，程序找不到路径或使用正则匹配进行删除时，查看匹配结果）
+git rm -r -n --cached 文件/文件夹名称 
+# 真正删除,被删除的文件相当于没有被 add，但是本地工作区中还在。
+git rm -r --cached 文件/文件夹名称
+git commit -m "提交说明"
+# --force 回强制使用本地的git数据库覆盖远程的。可能会导致与本地不一致的远程版本丢失（慎用）
+git push origin master --force
+```
+
+# git submodule
+## 新建项目中添加 submodule
+```shell
+git submodule add <子模块git地址> <存放的文件名>
+```
+执行该命令后会在当前目录生成: .gitmodules 和 子模块文件夹：
+
+1. .gitmodules 记录了本地文件与URL之间的映射关系
+```conf
+[submodule "ProcessManage"]  # 子模块名
+	path = ProcessManage
+	url = git@gitee.com:dominanttech/Dominant_vslam_ProcessManage.git
+
+```
+2. 新 ProcessManage 文件，并 clone 子模块
+注意：
+   1. 子模块文件夹只存子项目的commit id，父项目的 git 不会记录子模块的文件改动，而是通过 commit id 指定使用子模块的哪个commit版本。 
+   2. 如果 ProcessManage 文件夹已存在，可能会创建失败，也可以按照 [git submodule 完整用法整理](https://blog.csdn.net/wkyseo/article/details/81589477) 中的方式创建。
+
+3. .git/config 文件中添加 submodule 记录.
+```text
+[submodule "ProcessManage"]
+	url = git@gitee.com:dominanttech/Dominant_vslam_ProcessManage.git
+	active = true
+```
+
+4. 创建 ./git/modules/ProcessManage 文件夹，其中存储了子模块的 .git 中的内容，文件 ProcessManage/.git 变成了一个文件,其中记录了 .git文件夹被存放到了主.git/module的目录下.如下：
+```text
+gitdir: ../.git/modules/ProcessManage
+```
+## 将已有项目中的子文件夹变为 submodule
+### 添加 submodule
+```shell
+# 1. 重命名文件夹
+mv ProcessManage ProcessManage_
+# 2. 在当前项目中添加 submodule
+git submodule add <子模块git地址> Dominant_vslam_ProcessManage
+# 3. 删除 submodule 中需要覆盖的文件（include、src等）
+cd Dominant_vslam_ProcessManage && rm -rf include && rm -rf src
+# 4. 使用现有项目的文件，覆盖 submodule 中需要覆盖的文件
+cd Dominant_vslam_ProcessManage ； cp ../ProcessManage_/include . && cp ../ProcessManage_/src .
+# 5. 在主git中编译测试
+cd build || cd ../build && cmake .. && make -j4
+```
+### 添加的  submodule 与现有文件夹重名
+再添加 submodule 时，可以自定义文件夹名，但是为了尽量不影响其他人的使用（尽量不修改submodule的cmakeList文件），这个文件名应该要与 submodule 中的文件名一致，但是当项目中已有的子文件夹与要添加的submodule重名时。`git submodule add` 命令会报错。这时需要删除主 git 数据库中对重名文件夹的记录。过程如下：
+（在第上节中的第1步之前）
+```shell
+# 1. 在 git 的缓存中删除文件夹，相当于执行 git add 的逆操作
+git rm -r --cached "build"
+# 2. 将缓存的修改提交到 git 数据库（可选，因为下次 commit 时这一步会自动执行）
+git commit 
+```
+或者使用 git 的 mv 指令。
+```shell
+# git mv 应该可以替换上一节第一步中的 mv 和上面的 git rm 操作（没测试过）
+git mv <old-filename> <new filename>
+```
+然后继续执行上一节中的剩余操作
+
+# .git 文件解析
+```text
+drwxrwxr-x   8 zwx  zwx   4096 Feb 16 17:02 ./
+drwxrwxr-x  24 zwx  zwx   4096 Feb 16 17:58 ../
+drwxrwxr-x   2 zwx  zwx   4096 Jan  3 10:47 branches/
+-rw-r--r--   1 domi domi    11 Feb 16 17:02 COMMIT_EDITMSG
+-rw-rw-r--   1 zwx  zwx    356 Feb  3 09:49 config
+-rw-rw-r--   1 zwx  zwx     73 Jan  3 10:47 description
+-rw-r--r--   1 domi domi    20 Feb 13 16:38 HEAD
+drwxrwxr-x   2 zwx  zwx   4096 Jan  3 10:47 hooks/
+-rw-r--r--   1 domi domi 15236 Feb 16 17:02 index
+drwxrwxr-x   2 zwx  zwx   4096 Jan  3 10:47 info/
+drwxrwxr-x   3 zwx  zwx   4096 Jan  3 10:48 logs/
+drwxrwxr-x 260 zwx  zwx   4096 Jan  4 18:21 objects/
+-rw-r--r--   1 domi domi    41 Feb 13 16:43 ORIG_HEAD
+-rw-rw-r--   1 zwx  zwx    317 Jan  3 10:48 packed-refs
+drwxrwxr-x   5 zwx  zwx   4096 Jan  3 10:48 refs/
+```
+## `./git/logs`
+logs文件中记录git的操作日志，其中 
+- `./git/log/HEAD` 记录的是当前分支的 commit 信息对应的命令为 `git reflog` 。
+- `./git/log/refs/` 中包含了 heads 和 remotes 两个文件夹，其中分别记录了本地分支（stet、tmp）和 远程分支的 commit 信息。
+- `./git/log/refs/heads/HEAD`、`./git/log/refs/remotes/HEAD`

@@ -1,113 +1,130 @@
 @startuml
 start
+    #hotpink:while(1);
+
     'while (<color:hotpink>while(1));
-    if ( KeyFramesWaitCheck 为空？ ) then (yes)
-    : 提取 KeyFramesWaitCheck 中的待检查关键帧到 KeyFramesWaitCheck ，
-      并清空 KeyFramesWaitCheck]
-    else (继续存储数据)
+    if(（KeyFramesWaitCheck 为空？ || KeyFramesWaitCheck 中第一个元素的mnId大于局部地图的关键帧最小mnId） 
+      && SLAM 系统运行未结束) then (yes)
+      : sleep 4s]
+      if ( KeyFramesWaitCheck 为空？ ) then (yes)
+        : 提取 KeyFramesWaitCheck 中的待检查关键帧到 KeyFramesWaitCheck ,
+          并清空 mlKeyFramesWaitCheck]
+      else (继续存储数据)
+      endif
+
+      if(KeyFramesWaitCheck 非空 && KeyFramesWaitCheck 中第一个元素的mnId大于局部地图的关键帧最小mnId) then (yes)
+        : 更新加锁变量 mLocalMinMPId、mLocalMinKFId、mMapMaxKFid]
+        if (KeyFramesWaitCheck 中第一个元素的mnId大于局部地图的关键帧最小mnId) then (yes)
+          #hotpink: goto while(1);
+          detach  
+        else (no)
+        endif
+      else (no)
+      endif
+    else (no)
     endif
-    
-    : 获取 KeyFramesWaitCheck 中的一个关键帧;
-    partition CheckKeyFrameSave{
-      : 获取局部地图和当前关键帧的共视帧,并将可以存储的关键帧保存到 vpDeleteKFs]
-    }
-    partition CheckMapPointSave {
-      : 获取 vpDeleteKFs 中的关键帧观测到的地图点]
-      : 从地图中获取对应的地图点]
-      : 将所有地图点存入 vpDeleteMPs]
-    }
-    
-    : 获取 vpDeleteMPs 中最大的 mnId]
-    if ( vpDeleteMPs 中待存储地图点的最大mnId < Tracking 中局部地图中地图点的最小mnId && 系统运行未结束) then (no))
-        '#hotpink: goto while(1) ;
-        'detach
-    else (yes))
-      if (保存分块地图？) then (yes)
-        partition AddMapPointsToBlock {
-          : 获取地图点的块坐标]
-          if (地图点块是否被创建？) then (no)
-          : 创建地图点块]
+
+    if (KeyFramesWaitCheck 非空？)then (yes)
+      : 获取 KeyFramesWaitCheck 中的一个关键帧;
+      partition CheckKeyFrameSave{
+        : 获取局部地图和当前关键帧的共视帧,并将窗口内可以存储的关键帧保存到 vpDeleteKFs]
+      }
+      partition CheckMapPointSave {
+        : 获取 vpDeleteKFs 中的关键帧观测到的地图点]
+        : 从地图中获取对应的地图点]
+        : 将所有地图点存入 vpDeleteMPs]
+      }
+      
+      : 获取 vpDeleteMPs 中最大的 mnId]
+      if ( vpDeleteMPs 中待存储地图点的最大mnId < Tracking 中局部地图中地图点的最小mnId && 系统运行未结束) then (no))
+          '#hotpink: goto while(1) ;
+          'detach
+      else (yes))
+        : 统计已存储地图的大小，更新地图是否可以存储的标志 saveBlockMap]
+        if ( 是否保存地图 saveBlockMap = true ? ) then (yes)
+          partition AddMapPointsToBlock {
+            : 获取地图点的块坐标]
+            if (地图点块是否被创建？) then (no)
+            : 创建地图点块]
+              note left
+              new 
+              end note
+            else (yes)
+            endif
+            : 将 vpDeleteMPs 中的待存储地图点添加到 mMapPointBlockTemp 中对应地图块]
+          }
+            
+            partition MergeMapPointBlock{
+          if (地图点存储过？) then (yes)
+          : 加载已存储的地图点块到 mMapPointBlockLoading]
             note left
             new 
             end note
-          else (yes)
+          : 将 mMapPointBlockLoading 中的地图点加入 mMapPointBlockTemp]
+          else (no)
           endif
-          : 将 vpDeleteMPs 中的待存储地图点添加到 mMapPointBlockTemp 中对应地图块]
-        }
+          : 将 mMapPointBlockTemp 中的地图点块加入 mMapPointBlockWaiting]
+          : 清空 mMapPointBlockTemp]
+          }
           
-          partition MergeMapPointBlock{
-        if (地图点存储过？) then (yes)
-        : 加载已存储的地图点块到 mMapPointBlockLoading]
-          note left
-          new 
-          end note
-        : 将 mMapPointBlockLoading 中的地图点加入 mMapPointBlockTemp]
-        else (no)
-        endif
-        : 将 mMapPointBlockTemp 中的地图点块加入 mMapPointBlockWaiting]
-        : 清空 mMapPointBlockTemp]
-        }
-        
-        partition SaveMapPointBlock{
-          : 设置地图点块的表头信息]
-          : 在 BlockDatabase 添加或更新地图点块的表头信息]
-          : 存储 mMapPointBlockWaiting 中的地图点块]
-          : 删除 mMapPointBlockWaiting 中的地图点块（但是不删除其中的地图点）]
+          partition SaveMapPointBlock{
+            : 设置地图点块的表头信息]
+            : 在 BlockDatabase 添加或更新地图点块的表头信息]
+            : 存储 mMapPointBlockWaiting 中的地图点块]
+            : 删除 mMapPointBlockWaiting 中的地图点块（但是不删除其中的地图点）]
+            note right
+            delete
+            end note
+          }
+          
+          : 删除 mMapPointBlockLoading中的地图点块<color:red>和其中的地图点]
           note right
           delete
           end note
+        else (no)
+        endif
+
+        : 将 vpDeleteMPs 中的地图点加入 vpTryDeleteMPs]
+
+        partition DeleteMapPoints{
+          repeat: 获取 vpTryDeleteMPs 中的一个地图点;
+          if (地图点观察到了未被存储的关键帧) then (yes)
+          : 暂不删除地图点]
+          else (no)
+          partition SetBadFlag{
+            : 更新地图点的观测信息，在 mObservations 中清除已经删除的关键帧信息]
+            : 清除 mObservations 中的关键帧对当前的图点的观测（mvpMapPoints）]
+            : 在SLAM地图中删除当前地图点（mspMapPoints）]
         }
         
-        : 删除 mMapPointBlockLoading中的地图点块<color:red>和其中的地图点]
+        : 将地图点标记为已删除,release 地图点]
+        : erase vpTryDeleteMPs 中已经 release 的地图点]
         note right
-        delete
+        release 
         end note
-      else (no)
+        endif 
+        repeat while(处理完 vpTryDeleteMPs 中的所有地图点？) is (no) not (yes)
+        }
+        : 更新下一次保持的关键帧窗口的,mStratKeyFrameID += mWindowSize]
+        : 清空 vpDeleteKFs]
       endif
-
-      : 将 vpDeleteMPs 中的地图点加入 vpTryDeleteMPs]
-
-      partition DeleteMapPoints{
-        repeat: 获取 vpTryDeleteMPs 中的一个地图点;
-        if (地图点观察到了未被存储的关键帧) then (yes)
-        : 暂不删除地图点]
-        else (no)
-        partition SetBadFlag{
-          : 更新地图点的观测信息，在 mObservations 中清除已经删除的关键帧信息]
-          : 清除 mObservations 中的关键帧对当前的图点的观测（mvpMapPoints）]
-          : 在SLAM地图中删除当前地图点（mspMapPoints）]
-      }
-      
-      : 将地图点标记为已删除,release 地图点]
-      : erase vpTryDeleteMPs 中已经 release 的地图点]
-      note right
-      release 
-      end note
-      endif 
-      repeat while(处理完 vpTryDeleteMPs 中的所有地图点？) is (no) not (yes)
-      }
-      : 更新下一次保持的关键帧窗口的,mStratKeyFrameID += mWindowSize]
-      : 清空 vpDeleteKFs]
+    else (no)
     endif
   'end while
   '-[hidden]->
 
   if (SLAM系统结束 && Atlas处理完成) then (yes)
-    if (保存分块地图？) then (yes)
+    if ( 是否保存地图 saveBlockMap = true ? ) then (yes)
       : 保存分块数据库 mBlockDatabase]
     else (no)
     endif
-  #hotpink: 推出循环]
+
+  #hotpink: 推出循环;
   else (no)
-    if(KeyFramesWaitCheck 为空？) then (yes)
-      :sleep(1)]
-    else (no)
-    endif
-    #hotpink: goto while(1) 开始下一次循环]
+    #hotpink: goto while(1) 开始下一次循环;
     detach
   endif
 
 stop
-
 
 @enduml

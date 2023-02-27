@@ -54,4 +54,6 @@ constexpr double pi = 3.14;
 [C++线程安全的数据初始化](https://blog.csdn.net/y396397735/article/details/81125014)
 
 
-## 
+## sleep与wait的区别
+- sleep() 不会释放 mutex，wait 会释放 mutex
+- 

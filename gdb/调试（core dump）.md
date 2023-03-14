@@ -83,3 +83,88 @@ sysctl –p
     
 ## 参考
 [gdb调试coredump(使用篇)](https://blog.csdn.net/sunxiaopengsun/article/details/72974548)
+
+
+### 堆栈调试
+1. 定位要调试的代码
+```text
+1. attach 线程
+gdb -p pid  
+2. 查看每个线程正在执行的代码
+info threads
+3. 查看所有线程的调用堆栈，根据调用栈定位用户线程找到需要调试的线程
+thread apply all bt
+4. 跳转到指定线程，threadsNum 为 gdb 的线程标号
+threads threadsNum
+5. 查看线程的调用堆栈
+backtrace
+6. 跳转到指定栈帧
+up 、down、frame id
+7. 打印栈帧中执行的指令地址和对应的代码行
+frame、frame id、info line
+8. 打印指令执行的源码行,(只有Debug模式才会记录源码行)
+list、list -、list +、list linenum
+9. 打印地址对应的汇编代码
+disas 0x00007efd8f088af4
+```
+2. 控制代码执行
+```text
+1. 单步执行
+step     // 会进入函数
+next     // 不会进入函数
+finish   // 执行完当前栈帧对应的函数
+until    // 继续执行直到越过源码行，例如: 跳过循环的跳转指令,执行到循环结束
+
+2. 继续执行
+continue // 继续执行到下一个断点，可使用 ctrl+c 中段
+run      // 重新执行
+```
+
+3. 查看变量
+```text
+info args         // 查看，栈帧的参数
+info locals       // 查看当前栈帧局部变量
+info variables    // 查看所有可访问的全局变量和静态变量 的变量名
+info registers    // 查看那所有寄存器中的直
+x addr            // 查看内存中的变量
+```
+
+4. 编辑源文件
+```text
+默认使用 /bin/ex 也可以在启动 gdb 之前指定自定义编辑器
+
+export EDITOR=/usr/bin/vi 
+
+edit linenum
+
+```
+
+5. 改变执行
+```text
+1. 给变量赋值
+ print x=4 
+ set x=4
+
+2. 跳转到指定位置执行，
+jump linespec
+jump location
+注意：jump 命令除了改变程序计数器之外，不会改变当前堆栈帧，堆栈指针，也不改变任何内存位置和任何寄存器。如果跳转的目标位置和当前位置之间存在栈的操作空间，那么可能导致访问的不是我们想要的值，最好的跳转位置为一个新的的函数重新创建栈帧。
+
+3. 从函数返回
+return
+return expression    // 将 expression 的结果作为返回值参数
+
+4. 调用调试程序的函数
+print expr  // 调用程序并打印函数的返回值
+call expr   
+```
+
+6. 保存core文件（实在搞不定了，保存现场，以后再调试）
+```text
+1. 生成core文件
+generate-core-file [file]
+gcore [file] 
+
+2. 使用 core 文件调试， 从文件里读取符号和纯存储器的内容
+gdb ./test test.core
+```

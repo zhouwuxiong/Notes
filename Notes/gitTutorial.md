@@ -534,3 +534,28 @@ logs文件中记录git的操作日志，其中
 - `./git/log/HEAD` 记录的是当前分支的 commit 信息对应的命令为 `git reflog` 。
 - `./git/log/refs/` 中包含了 heads 和 remotes 两个文件夹，其中分别记录了本地分支（stet、tmp）和 远程分支的 commit 信息。
 - `./git/log/refs/heads/HEAD`、`./git/log/refs/remotes/HEAD`
+
+
+# Git Hooks
+git 在上传软连接文件时，只会上传文件的指向链接，不会上传软连接文件中的内容。可选的解决方法有两个：
+1. 使用 git hook
+2. 使用 `mount --bind` +  `/etc/fstab` 自动挂载 
+## Client-Side Hooks
+
+git 可以在 `.git/hooks` 文件夹中编写自定义脚本，git 提供了 .sample 的默认 shell 脚本，但是你也可以使用 Ruby、Python 等任意熟悉的语言。在使用特定脚本时，只需要删除 .sample 尾缀即可。
+### Committing-Workflow Hooks
+commit hooks 可以使用 `git commit --no-verify` 绕过不执行。有的 hooks 需要提供参数，当 hooks 函数执行失败时，会终止提交。
+```text
+pre-commit              在编辑 commit msg 之前执行，一般用于检查代码格式，清理尾部空格等。
+prepare-commit-msg      在生成 default msg 之后，键入 new msg 时执行。
+commit-msg              在提交之前执行，一般用于检查 commit msg 的内容
+post-commit             在 commit 之后执行。一般用于通知等功能
+```
+### Email Workflow Hooks
+
+### Other Client Hooks
+## Server-Side Hooks
+### pre-receive
+
+[自定义 Git - Git 钩子](https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90)
+[巧用 gitHooks 提交前校验代码](https://cloud.tencent.com/developer/article/1916604)

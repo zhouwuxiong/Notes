@@ -481,6 +481,22 @@ git submodule add <子模块git地址> <存放的文件名>
 ```text
 gitdir: ../.git/modules/ProcessManage
 ```
+
+5. 指定 submodule 分支（默认为绑定master分支）
+```shell
+git config -f .gitmodules submodule."子模快文件名".branch "子模块分支名"
+```
+该条命令实际是在 .gitmodules 文件夹中添加了一条 `branch = dev` 记录
+```text
+[submodule "Dominant_vslam_BasicService"]
+	path = Dominant_vslam_BasicService
+	url = https://gitee.com/dominanttech/Dominant_vslam_BasicService.git
+	branch = dev
+```
+6. 添加某一子模块的分支
+```text
+```
+
 ## 将已有项目中的子文件夹变为 submodule
 ### 添加 submodule
 ```shell
@@ -494,6 +510,7 @@ cd Dominant_vslam_ProcessManage && rm -rf include && rm -rf src
 cd Dominant_vslam_ProcessManage ； cp ../ProcessManage_/include . && cp ../ProcessManage_/src .
 # 5. 在主git中编译测试
 cd build || cd ../build && cmake .. && make -j4
+6. 
 ```
 ### 添加的  submodule 与现有文件夹重名
 再添加 submodule 时，可以自定义文件夹名，但是为了尽量不影响其他人的使用（尽量不修改submodule的cmakeList文件），这个文件名应该要与 submodule 中的文件名一致，但是当项目中已有的子文件夹与要添加的submodule重名时。`git submodule add` 命令会报错。这时需要删除主 git 数据库中对重名文件夹的记录。过程如下：

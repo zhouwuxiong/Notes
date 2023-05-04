@@ -45,3 +45,14 @@ mutex显示的删除了编译器默认生成的拷贝构造和移动构造函数
 
 ## boost 反序裂化指针时，会自动分配内存，需要在外部手动释放
 ![boost Serialization bug](../test/boost/boostLoadPoint.cpp)
+
+## for（&auto iter:map）引用导 iter 为const属性 ？
+```C++
+struct MPB{
+  string PosToString(){...}
+}
+
+for(auto &iter: map){
+  iter->PosToString();
+}
+```

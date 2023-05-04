@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/boostMemoryTest.dir/boostMemoryTest.cpp.o  -o boostMemoryTest  /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.71.0 

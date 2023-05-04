@@ -22,3 +22,16 @@ set::insert()有多个重载函数可以实现：
 2. 删除元素时，指向删除元素的迭代器失效。
 3. 新增元素导致 begin、end、fist等位置的迭代器失效
   
+
+## map & muti_map & unorded_map & hash_map
+容器 | 底层实现 | 特性 | 效率 | 优点| 缺点 | 适用场景 | 其它
+-|-|-|-|-|-|-|-
+map | 红黑数（平衡二叉树）| 1. 插入时根据比较函数进行排序 </BR> 2. 使用二分法进行查找 </BR> 3. Key 不重复 </br> 4. 插入和删除时会导致迭代器失效 </br>5. map存储自定义类型时，需要指定比较函数| 查找、插入、删除：O(log(n)) | 性能稳定 | 占用的空间大：红黑树的每一个节点需要保存其父节点位置、孩子节点位置及红/黑性质 | 1. 数据需要有序 2. 查询不频繁，但是实时性要求较高 | 如果map的Key是连续的，通过迭代起偏移访问的效率会比通过Key查询访问的效率更高
+unorded_map | Hash表 & 链地址法 | 1. Key存储的是散列的Has值 </br> 2. 每个链表被称为桶 bucket </br> 4. 通过负载因子判断 hash表的性能(负载因子 = 容器存储的总键值对 / 桶数),默认为1.</br> 5. **当负载因子超过阈值时，会增加桶数（默认为翻倍）并重新Hash,重新 Hash 时，迭代器会失效** </br> 6. unorded_map存储的Key为自定义类型时，需要指定自定义的Hash函数和Key_equal函数| 查询、插入、删除：O(1) <br> 重散列：O(n) | 查询速度快，平均性能接近于常数时间O(1) | 1. unordered_map相对于map空间占用更大，而且Hash表的空间利用率不高 <br> 2. 查询性能不太稳定，最坏时间复杂度可达到O(n) <br> 3. 插入时，如果需要重散列，会消耗而外的O(n)时间。| 1. 查询频繁，而且对单次查询时间不敏感。</br> 2. 内存不紧缺，但效率要求较高的应用。| 
+
+
+*Hash_map 与 unorded_map 底层都使用HashTable实现，但是在reHash时，Hash_map会直接翻倍bucket数组，但是unorded_map在翻倍后会选择一个更大的素数。*
+
+
+[C++：map、hash_map、unordered_map](https://blog.csdn.net/u014209688/article/details/95366594)
+[C++ STL：unordered_map 自定义键值类型](https://blog.csdn.net/y109y/article/details/82669620)

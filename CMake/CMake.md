@@ -1,10 +1,29 @@
 
 [cmake官方教程中文翻译](https://blog.51cto.com/u_12951861/5695609)
 
-1. find_package
+## find_package
+### Module模式(仅仅查找Findxxx.cmake文件)
+为了方便我们在项目中引入外部依赖包，cmake官方为我们预定义了许多寻找依赖包的Module，他们存储在path_to_your_cmake/share/cmake-<version>/Modules目录下。可以在官方文档中查看到哪些库官方已经为我们定义好了，我们可以直接使用find_package函数进行引用[官方文档：Find Modules](https://link.zhihu.com/?target=https%3A//cmake.org/cmake/help/latest/manual/cmake-modules.7.html)。
+
+### Config模式（仅仅查找xxxConfig.cmake文件）
+*如果Module模式搜索失败，没有找到对应的Find<LibraryName>.cmake文件，则转入Config模式进行搜索。*,它主要通过 `/usr/local/lib/cmake/glog/`文件夹下的 <LibraryName>Config.cmake 来引入我们需要的库. find_package 的参考路径可以参考[官方文档:find_package](https://link.zhihu.com/?target=https%3A//cmake.org/cmake/help/latest/command/find_package.html)
+
+## FetchContent
+```txt
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/0296d7d37007ec54441cb9f8cd001da6ac58eea8.zip
+)
+# For Windows: Prevent overriding the parent project's compiler/linker settings
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
+```
+
+## 
 查找路径依次为：
 1. `CMake变量${CMAKE_MODULE_PATH}`中的所有目录
-2. cmake自己的模块目录 `/share/cmake-x.y/Modules/`(`$CMAKE_ROOT`的具体值可以通过CMake中message命令输出）。如果找到了xxxx模块，那么Findxxxx.cmake一般会设置以下变量供CMakeLists.txt使用：
+2. cmake自己的模块目录 `<CMAKE_ROOT>/share/cmake-x.y/Modules/`(`$CMAKE_ROOT`的具体值可以通过CMake中message命令输出）。如果找到了xxxx模块，那么Findxxxx.cmake一般会设置以下变量供CMakeLists.txt使用：
 
 ```text
 xxxx_FOUND    #为true

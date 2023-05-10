@@ -17,6 +17,8 @@ Cgroup是于2.6内核由Google公司主导引入的，它是Linux内核实现资
 [The Linux Kernel](https://www.kernel.org/doc/html/latest/translations/zh_CN/index.html)
 
 
+*在 docker 容器中 /proc/pid/limits 记录了进程的资源限制 *
+
 ### `cpulimit`
 
 [linux的cpu和磁盘io优先级设置](https://www.cnblogs.com/czw-bk/p/10961348.html)

@@ -5,7 +5,7 @@ linux 三剑客功能:
 grep ： 过滤文本
 sed  :  修改文本
 awk  :  处理文本
-地
+
 
 ### 参数
 -F 指定分隔符
@@ -82,3 +82,18 @@ screen -ls|awk '{print $1}'|grep "Bicocca"|awk '{print $1}
 ```
 ## 参考
 [awk命令详解](https://www.cnblogs.com/zhengyan6/p/16290156.html)
+
+## sed
+
+```shell
+# 替换行尾处的 abc 字符串为 123
+sed -i 's/abc$/123/g' {} +
+# 替换行首处的 abc 字符串为 123
+sed -i 's/^abc/123/g' {} +
+# 替换 ./ 文件夹下所有文件中的 abc 字符串为 123
+# {} 将前一个命令的每轮（{}表示循环内）输出作为当前命令的参数
+# + 表示同时传递多个参数，以提高执行的效率
+find ./ -type f -exec sed -i 's/abc/123/g' {} +
+# 在包含 test 字符串的行尾添加字符串 123
+sed -i '/test/ s/$/123/'
+```

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "liaobots"; /* Project id 4021693 */
+  src: url('//at.alicdn.com/t/c/font_4021693_s7jfyg78lj.woff2?t=1681747118062') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4021693_s7jfyg78lj.woff?t=1681747118062') format('woff'),
+       url('//at.alicdn.com/t/c/font_4021693_s7jfyg78lj.ttf?t=1681747118062') format('truetype');
+}
+
+.liaobots {
+  font-family: "liaobots" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-liaobotswechat-pay:before {
+  content: "\e60e";
+}
+

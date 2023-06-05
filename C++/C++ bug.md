@@ -56,3 +56,6 @@ for(auto &iter: map){
   iter->PosToString();
 }
 ```
+
+## Vector 访问超出 size 的元素时，并会会导致数组越界错误，如果有多余容量的话。此时会访问 size 外的内存，一般情况是0，因为在分配内存时会对内存进行初始化
+

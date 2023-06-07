@@ -1,0 +1,218 @@
+CPU mean:  6.419447287615148
+CPU max:  99.9
+CPU max timestamp:  14:00:22.112088
+run times:  977
+253.3 14:00:20.428648
+220.0 14:00:20.884587
+220.0 14:00:21.338395
+260.0 14:00:21.774286
+206.7 14:01:11.352879
+206.7 14:03:14.312323
+226.7 14:04:32.482510
+220.0 14:04:33.971585
+218.8 14:04:34.407925
+213.3 14:05:02.570277
+
+253.3
+I0426 14:00:20.411657 2145590 DynamicMap.cpp:2191] Atlas: SaveMPs: MPs Can Save:759 
+I0426 14:00:20.411782 2145590 DynamicMap.cpp:719] Atlas: AddMapPointToBlock: addedMPNums: 15478 
+I0426 14:00:20.411810 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 6_3_3 
+I0426 14:00:20.412065 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 5_2_2 
+I0426 14:00:20.412127 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 5_3_3 
+I0426 14:00:20.412160 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 5_2_3 
+I0426 14:00:20.412197 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 5_3_2 
+I0426 14:00:20.412612 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 7_4_2 
+I0426 14:00:20.412662 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 7_3_3 
+I0426 14:00:20.412848 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_3_-2 
+I0426 14:00:20.413695 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 4_2_3 
+I0426 14:00:20.413758 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 4_3_3 
+I0426 14:00:20.414510 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_3_3 
+I0426 14:00:20.414760 2145590 DynamicMap.cpp:495] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 275 mMapPointBlockTemp.size() = 20 
+I0426 14:00:20.416864 2145590 DynamicMap.cpp:605] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 292 mMapPointBlockTemp.size() = 3 
+I0426 14:00:20.416941 2145590 DynamicMap.cpp:869] ------- Start Merge MapPoint Block -------- 
+I0426 14:00:20.418665 2145590 DynamicMap.cpp:905] ------- End Merge MapPoint Block -------- 
+I0426 14:00:20.418715 2145590 DynamicMap.cpp:951] ------- Start Save MPBlock bin -------- 
+I0426 14:00:20.425588 2145590 DynamicMap.cpp:976] --------- End Save MPBlock bin -------- 
+I0426 14:00:20.425746 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 6_2_3 
+I0426 14:00:20.425981 2145590 DynamicMap.cpp:2226] Atlas: SaveKFs: KFs Can Save:20 
+I0426 14:00:20.426225 2145590 DynamicMap.cpp:817] ------- Start Merge KeyFrame Block -------- 
+I0426 14:00:20.426255 2145590 DynamicMap.cpp:1102] --------- Start BlocksLoad -------- 
+I0426 14:00:20.434594 2145590 DynamicMap.cpp:987] Atlas: LoadKFB: Start Load  
+I0426 14:00:20.441623 2145590 DynamicMap.cpp:1004] Atlas: LoadKFB: Load 3KFs 
+I0426 14:00:20.443442 2145590 DynamicMap.cpp:1168] --------- End BlocksLoad -------- 
+I0426 14:00:20.443503 2145590 DynamicMap.cpp:857] ------- End Merge KeyFrame Block -------- 
+I0426 14:00:20.443523 2145590 DynamicMap.cpp:915] ------- Start Save KFBlock bin -------- 
+I0426 14:00:20.445750 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 12 
+I0426 14:00:20.467365 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 7 
+I0426 14:00:20.475263 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 4 
+I0426 14:00:20.479763 2145590 DynamicMap.cpp:940] --------- End Save KFBlock bin -------- 
+I0426 14:00:20.479837 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 5_2_3 
+I0426 14:00:20.480299 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 6_2_3 
+I0426 14:00:20.480707 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 6_2_4 
+I0426 14:00:20.481415 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 6_3_3 
+I0426 14:00:20.481892 2145590 DynamicMap.cpp:2404] Atlas: AtlasWaitingBA: waiting seconds: 9e-06 
+I0426 14:00:20.495904 2145590 DynamicMap.cpp:2488]  AddBowDatabase 0,20 
+I0426 14:00:20.496989 2145528 Frontend.cpp:95] Frontend: Extract ORB, use 25.6711 ms 
+I0426 14:00:20.497047 2145528 Frontend.cpp:2118] Front-End: ALL: Start Tracking 
+
+220.0
+I0426 14:00:20.804530 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 3 
+I0426 14:00:20.808475 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 3 
+I0426 14:00:20.812724 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 2 
+I0426 14:00:20.815919 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 5 
+I0426 14:00:20.822512 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 3 
+I0426 14:00:20.826289 2145590 DynamicMap.cpp:940] --------- End Save KFBlock bin -------- 
+I0426 14:00:20.826560 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 4_1_3 
+I0426 14:00:20.826910 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 4_2_3 
+I0426 14:00:20.827116 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 5_2_3 
+I0426 14:00:20.827613 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 6_2_3 
+I0426 14:00:20.828121 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 6_3_3 
+I0426 14:00:20.830341 2145590 DynamicMap.cpp:2404] Atlas: AtlasWaitingBA: waiting seconds: 8e-06 
+I0426 14:00:20.833218 2145528 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0597107 FINAL_COST = 1324.19 
+I0426 14:00:20.840674 2145590 DynamicMap.cpp:2488]  AddBowDatabase 0,20 
+I0426 14:00:20.861362 2145528 Frontend.cpp:95] Frontend: Extract ORB, use 21.4622 ms 
+I0426 14:00:20.862073 2145528 Frontend.cpp:2118] Front-End: ALL: Start Tracking 
+
+220.0
+I0426 14:00:21.324507 2145590 DynamicMap.cpp:2191] Atlas: SaveMPs: MPs Can Save:883 
+I0426 14:00:21.324652 2145590 DynamicMap.cpp:719] Atlas: AddMapPointToBlock: addedMPNums: 17290 
+I0426 14:00:21.324788 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_1_3 
+I0426 14:00:21.324985 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_1_3 
+I0426 14:00:21.325067 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_2_3 
+I0426 14:00:21.325690 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_0_3 
+I0426 14:00:21.325799 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_0_3 
+I0426 14:00:21.325913 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_0_3 
+I0426 14:00:21.325999 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_2_3 
+I0426 14:00:21.326421 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_0_2 
+I0426 14:00:21.326479 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_1_1 
+I0426 14:00:21.326575 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_1_2 
+I0426 14:00:21.326730 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_1_2 
+I0426 14:00:21.327041 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_0_5 
+I0426 14:00:21.327172 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_2_3 
+I0426 14:00:21.327237 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_2_2 
+I0426 14:00:21.327279 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_1_3 
+I0426 14:00:21.327450 2145590 DynamicMap.cpp:495] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 285 mMapPointBlockTemp.size() = 42 
+I0426 14:00:21.329612 2145590 DynamicMap.cpp:605] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 319 mMapPointBlockTemp.size() = 8 
+I0426 14:00:21.330222 2145590 DynamicMap.cpp:869] ------- Start Merge MapPoint Block -------- 
+I0426 14:00:21.349136 2145590 DynamicMap.cpp:905] ------- End Merge MapPoint Block -------- 
+I0426 14:00:21.349182 2145590 DynamicMap.cpp:951] ------- Start Save MPBlock bin -------- 
+I0426 14:00:21.373221 2145590 DynamicMap.cpp:976] --------- End Save MPBlock bin -------- 
+I0426 14:00:21.374058 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 0_0_3 
+I0426 14:00:21.375022 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 0_1_1 
+I0426 14:00:21.375864 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 1_0_4 
+I0426 14:00:21.376885 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 3_0_4 
+I0426 14:00:21.377570 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 3_1_4 
+I0426 14:00:21.378489 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 4_1_3 
+I0426 14:00:21.379145 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 4_2_3 
+I0426 14:00:21.379393 2145590 DynamicMap.cpp:2226] Atlas: SaveKFs: KFs Can Save:20 
+I0426 14:00:21.379452 2145590 DynamicMap.cpp:817] ------- Start Merge KeyFrame Block -------- 
+I0426 14:00:21.379477 2145590 DynamicMap.cpp:1102] --------- Start BlocksLoad -------- 
+I0426 14:00:21.389381 2145590 DynamicMap.cpp:987] Atlas: LoadKFB: Start Load  
+I0426 14:00:21.391682 2145590 DynamicMap.cpp:1004] Atlas: LoadKFB: Load 3KFs 
+I0426 14:00:21.393157 2145590 DynamicMap.cpp:1168] --------- End BlocksLoad -------- 
+I0426 14:00:21.393216 2145590 DynamicMap.cpp:857] ------- End Merge KeyFrame Block -------- 
+I0426 14:00:21.393234 2145590 DynamicMap.cpp:915] ------- Start Save KFBlock bin -------- 
+I0426 14:00:21.394728 2145590 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 9 
+
+260.0
+I0426 14:00:21.781720 2145590 DynamicMap.cpp:2191] Atlas: SaveMPs: MPs Can Save:927 
+I0426 14:00:21.781816 2145590 DynamicMap.cpp:719] Atlas: AddMapPointToBlock: addedMPNums: 18217 
+I0426 14:00:21.781853 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_1_3 
+I0426 14:00:21.781926 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_5 
+I0426 14:00:21.781983 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_0_3 
+I0426 14:00:21.782168 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_0_3 
+I0426 14:00:21.782438 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_1_3 
+I0426 14:00:21.784238 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -2_-1_6 
+I0426 14:00:21.784660 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 0_1_3 
+I0426 14:00:21.784763 2145590 DynamicMap.cpp:495] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 312 mMapPointBlockTemp.size() = 25 
+I0426 14:00:21.787321 2145590 DynamicMap.cpp:605] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 326 mMapPointBlockTemp.size() = 11 
+I0426 14:00:21.787398 2145590 DynamicMap.cpp:869] ------- Start Merge MapPoint Block -------- 
+
+206.7
+I0426 14:03:14.323272 2145528 Backend.cpp:295] Run_onceSearchInNeighbors 
+I0426 14:03:14.333366 2145590 DynamicMap.cpp:905] ------- End Merge MapPoint Block -------- 
+I0426 14:03:14.333422 2145590 DynamicMap.cpp:951] ------- Start Save MPBlock bin -------- 
+I0426 14:03:14.376169 2145590 DynamicMap.cpp:976] --------- End Save MPBlock bin -------- 
+I0426 14:03:14.376758 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 1_-1_3 
+I0426 14:03:14.377079 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 0_-1_2 
+I0426 14:03:14.377368 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 0_-1_3 
+I0426 14:03:14.377777 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 0_-1_4 
+I0426 14:03:14.378260 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 0_0_2 
+I0426 14:03:14.379972 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 0_0_3 
+I0426 14:03:14.380970 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 1_-1_2 
+I0426 14:03:14.381129 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 1_0_2 
+I0426 14:03:14.381935 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 1_0_3 
+I0426 14:03:14.383010 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 2_-1_3 
+I0426 14:03:14.383308 2145590 DynamicMap.cpp:1609] Atlas: DeleteLoadingBlocks: deleting MP Block: 2_0_3 
+I0426 14:03:14.383656 2145590 DynamicMap.cpp:2226] Atlas: SaveKFs: KFs Can Save:20 
+I0426 14:03:14.383724 2145590 DynamicMap.cpp:817] ------- Start Merge KeyFrame Block -------- 
+I0426 14:03:14.383754 2145590 DynamicMap.cpp:1102] --------- Start BlocksLoad -------- 
+I0426 14:03:14.392314 2145528 Backend.cpp:316] Run_onceLocalBundleAdjustmentIntStatePRCeres 
+
+226.7
+I0426 14:04:32.476414 2145528 Frontend.cpp:95] Frontend: Extract ORB, use 39.7815 ms 
+I0426 14:04:32.477202 2145528 Frontend.cpp:2118] Front-End: ALL: Start Tracking 
+I0426 14:04:32.489475 2145590 DynamicMap.cpp:2191] Atlas: SaveMPs: MPs Can Save:1174 
+I0426 14:04:32.489543 2145590 DynamicMap.cpp:719] Atlas: AddMapPointToBlock: addedMPNums: 37740 
+I0426 14:04:32.489624 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_2 
+I0426 14:04:32.489696 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_1 
+I0426 14:04:32.490214 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_3 
+I0426 14:04:32.490572 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_2_3 
+I0426 14:04:32.490906 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -2_0_2 
+I0426 14:04:32.490958 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -2_0_3 
+I0426 14:04:32.491375 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_2_4 
+I0426 14:04:32.492003 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_2_2 
+I0426 14:04:32.492213 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -2_1_4 
+I0426 14:04:32.492388 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -3_1_4 
+I0426 14:04:32.492707 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_3_3 
+I0426 14:04:32.493152 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -2_0_5 
+I0426 14:04:32.493314 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_2_3 
+I0426 14:04:32.493409 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_3_4 
+I0426 14:04:32.493479 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_3_4 
+I0426 14:04:32.493502 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_4_8 
+I0426 14:04:32.493675 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 1_1_3 
+I0426 14:04:32.493764 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -3_0_4 
+I0426 14:04:32.493798 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -2_0_4 
+I0426 14:04:32.494015 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_4_4 
+I0426 14:04:32.494060 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_2_3 
+I0426 14:04:32.494138 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 4_4_5 
+I0426 14:04:32.494304 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -5_1_7 
+I0426 14:04:32.494330 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -3_1_6 
+I0426 14:04:32.494350 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_4_5 
+I0426 14:04:32.494441 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 4_4_7 
+I0426 14:04:32.494465 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -5_0_7 
+I0426 14:04:32.494590 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_4 
+I0426 14:04:32.494730 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 2_3_5 
+I0426 14:04:32.495055 2145590 DynamicMap.cpp:495] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 532 mMapPointBlockTemp.size() = 57 
+I0426 14:04:32.499092 2145590 DynamicMap.cpp:605] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 577 mMapPointBlockTemp.size() = 12 
+I0426 14:04:32.499188 2145590 DynamicMap.cpp:869] ------- Start Merge MapPoint Block -------- 
+
+220.0
+I0426 14:04:33.901749 2145590 DynamicMap.cpp:2191] Atlas: SaveMPs: MPs Can Save:840 
+I0426 14:04:33.901856 2145590 DynamicMap.cpp:719] Atlas: AddMapPointToBlock: addedMPNums: 38580 
+I0426 14:04:33.902171 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_2_4 
+I0426 14:04:33.902290 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_4 
+I0426 14:04:33.902350 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -3_1_5 
+I0426 14:04:33.902667 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 3_3_4 
+I0426 14:04:33.903034 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_2 
+I0426 14:04:33.903348 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_0_3 
+I0426 14:04:33.903620 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -2_-1_4 
+I0426 14:04:33.904244 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 0_-2_4 
+I0426 14:04:33.904599 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 0_0_5 
+I0426 14:04:33.904645 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: 0_1_6 
+I0426 14:04:33.904726 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_-1_4 
+I0426 14:04:33.904785 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_-1_3 
+I0426 14:04:33.904824 2145590 DynamicMap.cpp:481] Atlas: AddSmallBlock: pop small MPB: -1_-2_5 
+I0426 14:04:33.904904 2145590 DynamicMap.cpp:495] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 564 mMapPointBlockTemp.size() = 35 
+I0426 14:04:33.909866 2145590 DynamicMap.cpp:605] Atlas: ReserveSmallBlock: mMPBlocksReserve.size() = 589 mMapPointBlockTemp.size() = 10 
+I0426 14:04:33.909922 2145590 DynamicMap.cpp:869] ------- Start Merge MapPoint Block -------- 
+I0426 14:04:33.970115 2145590 DynamicMap.cpp:905] ------- End Merge MapPoint Block -------- 
+I0426 14:04:33.970171 2145590 DynamicMap.cpp:951] ------- Start Save MPBlock bin -------- 
+
+218.8
+I0426 14:04:34.401343 2145590 DynamicMap.cpp:1168] --------- End BlocksLoad -------- 
+I0426 14:04:34.401439 2145590 DynamicMap.cpp:1102] --------- Start BlocksLoad -------- 
+I0426 14:04:34.466728 2145590 DynamicMap.cpp:987] Atlas: LoadKFB: Start Load  
+I0426 14:04:34.483731 2145528 Frontend.cpp:95] Frontend: Extract ORB, use 30.5068 ms 
+I0426 14:04:34.484153 2145528 Frontend.cpp:2118] Front-End: ALL: Start Tracking 
+I0426 14:04:34.485777 2145590 DynamicMap.cpp:1004] Atlas: LoadKFB: Load 17KFs 

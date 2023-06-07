@@ -1,0 +1,11 @@
+==2349616== Callgrind, a call-graph generating cache profiler
+==2349616== Copyright (C) 2002-2017, and GNU GPL'd, by Josef Weidendorfer et al.
+==2349616== Using Valgrind-3.20.0 and LibVEX; rerun with -h for copyright info
+==2349616== Command: ./a.out
+==2349616== 
+==2349616== For interactive control, run 'callgrind_control -h'.
+==2349616== 
+==2349616== Events    : Ir
+==2349616== Collected : 146300000
+==2349616== 
+==2349616== I   refs:      146,300,000

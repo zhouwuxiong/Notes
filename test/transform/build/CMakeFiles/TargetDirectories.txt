@@ -1,0 +1,8 @@
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/edit_cache.dir
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/ceresDemo.dir
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/Tutorial.dir
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/rebuild_cache.dir
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/powell.dir
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/simple_bundle_adjuster.dir
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/curve_fitting.dir
+/dominant/Project_Dominant/test/transform/build/CMakeFiles/robust_curve_fit.dir

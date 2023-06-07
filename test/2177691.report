@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.2177691' (creator: callgrind-3.20.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 2042522605
+Trigger: Program termination
+Profiled target:  ./a.out (PID 2177691, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+149,403,914 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+149,403,914 (100.0%)  /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.27.so]
+149,403,914 (100.0%)  ???:(below main) [/dominant/Project_Dominant/test/a.out]
+149,403,914 (100.0%)  ???:0x0000000000001090 [/lib/x86_64-linux-gnu/ld-2.27.so]
+149,403,914 (100.0%)  ???:main [/dominant/Project_Dominant/test/a.out]
+149,403,914 (100.0%)  ???:perf() [/dominant/Project_Dominant/test/a.out]
+149,403,914 (100.0%)  ???:perf1() [/dominant/Project_Dominant/test/a.out]
+  4,700,006 ( 3.15%)  /build/glibc-S9d2JN/glibc-2.27/gmon/../sysdeps/x86_64/_mcount.S:mcount [/lib/x86_64-linux-gnu/libc-2.27.so]
+  3,403,908 ( 2.28%)  /build/glibc-S9d2JN/glibc-2.27/misc/../sysdeps/posix/usleep.c:usleep [/lib/x86_64-linux-gnu/libc-2.27.so]
+  2,700,006 ( 1.81%)  /build/glibc-S9d2JN/glibc-2.27/gmon/mcount.c:__mcount_internal [/lib/x86_64-linux-gnu/libc-2.27.so]
+    903,908 ( 0.61%)  /build/glibc-S9d2JN/glibc-2.27/posix/../sysdeps/unix/sysv/linux/nanosleep.c:nanosleep [/lib/x86_64-linux-gnu/libc-2.27.so]
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c
+  /build/glibc-S9d2JN/glibc-2.27/gmon/../sysdeps/x86_64/_mcount.S
+  /build/glibc-S9d2JN/glibc-2.27/gmon/mcount.c
+  /build/glibc-S9d2JN/glibc-2.27/misc/../sysdeps/posix/usleep.c
+  /build/glibc-S9d2JN/glibc-2.27/posix/../sysdeps/unix/sysv/linux/nanosleep.c
+

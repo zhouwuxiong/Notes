@@ -1,0 +1,46 @@
+Log file created at: 2023/04/26 11:23:36
+Running on machine: dominant-ThinkPad-X1-Carbon
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0426 11:23:36.166246 1897262 Frontend.cpp:1149] Front-End: NOT_INITIALIZED:  Map Created 32 Points
+W0426 11:23:36.168298 1897262 Frontend.cpp:1173] Front-End: NOT_INITIALIZED:  Successful Init
+W0426 11:27:23.972504 1897262 Frontend.cpp:2475] Front-End: OK: VSLAM LOST
+W0426 11:27:24.073035 1897262 Frontend.cpp:2267] Frontend: LOST: Try ReInitialize
+W0426 11:27:24.073984 1897262 Frontend.cpp:2281] Frontend: LOST: Fail ReInitialize
+W0426 11:27:24.167822 1897262 Frontend.cpp:2267] Frontend: LOST: Try ReInitialize
+W0426 11:27:24.169303 1897262 Frontend.cpp:1256] Frontend: LOST: Search For Matche Points
+W0426 11:27:24.190567 1897262 Frontend.cpp:1271] Frontend: LOST: Succ Search, Enough Matched Points
+W0426 11:27:24.191237 1897262 Frontend.cpp:1286] Frontend: LOST: Try Init
+W0426 11:27:24.193747 1897262 Frontend.cpp:1316] Frontend: LOST: Fail Init, Not Enough Inlier, 0
+W0426 11:27:24.194357 1897262 Frontend.cpp:2281] Frontend: LOST: Fail ReInitialize
+W0426 11:27:24.276623 1897262 Frontend.cpp:2267] Frontend: LOST: Try ReInitialize
+W0426 11:27:24.277197 1897262 Frontend.cpp:1256] Frontend: LOST: Search For Matche Points
+W0426 11:27:24.301329 1897262 Frontend.cpp:1271] Frontend: LOST: Succ Search, Enough Matched Points
+W0426 11:27:24.301460 1897262 Frontend.cpp:1286] Frontend: LOST: Try Init
+W0426 11:27:24.303063 1897262 Frontend.cpp:1316] Frontend: LOST: Fail Init, Not Enough Inlier, 0
+W0426 11:27:24.303457 1897262 Frontend.cpp:2281] Frontend: LOST: Fail ReInitialize
+W0426 11:27:24.386351 1897262 Frontend.cpp:2267] Frontend: LOST: Try ReInitialize
+W0426 11:27:24.386811 1897262 Frontend.cpp:1256] Frontend: LOST: Search For Matche Points
+W0426 11:27:24.406848 1897262 Frontend.cpp:1266] Frontend: LOST: Fail Search, Not Enough Matched Points
+W0426 11:27:24.407382 1897262 Frontend.cpp:2275] Frontend: LOST: Succ ReInitialize
+W0426 11:27:24.501590 1897262 Frontend.cpp:2267] Frontend: LOST: Try ReInitialize
+W0426 11:27:24.502276 1897262 Frontend.cpp:2281] Frontend: LOST: Fail ReInitialize
+W0426 11:27:24.594249 1897262 Frontend.cpp:2267] Frontend: LOST: Try ReInitialize
+W0426 11:27:24.594306 1897262 Frontend.cpp:1256] Frontend: LOST: Search For Matche Points
+W0426 11:27:24.618192 1897262 Frontend.cpp:1271] Frontend: LOST: Succ Search, Enough Matched Points
+W0426 11:27:24.618376 1897262 Frontend.cpp:1286] Frontend: LOST: Try Init
+W0426 11:27:24.621068 1897262 Frontend.cpp:1316] Frontend: LOST: Fail Init, Not Enough Inlier, 0
+W0426 11:27:24.623337 1897262 Frontend.cpp:2281] Frontend: LOST: Fail ReInitialize
+W0426 11:27:24.720721 1897262 Frontend.cpp:2267] Frontend: LOST: Try ReInitialize
+W0426 11:27:24.724759 1897262 Frontend.cpp:1256] Frontend: LOST: Search For Matche Points
+W0426 11:27:24.749876 1897262 Frontend.cpp:1271] Frontend: LOST: Succ Search, Enough Matched Points
+W0426 11:27:24.752655 1897262 Frontend.cpp:1286] Frontend: LOST: Try Init
+W0426 11:27:24.758064 1897262 Frontend.cpp:1301] Frontend: LOST: Succ Init, Enough Inlier, 49
+W0426 11:27:24.798622 1897262 Frontend.cpp:1408] Front-End: LOST: Map Recreated 49 Points
+W0426 11:27:24.800766 1897262 Frontend.cpp:1409] Front-End: LOST: Try Tracked Created Points
+W0426 11:27:24.808784 1897262 Frontend.cpp:1432] Front-End: LOST: Succ, Enough Tracked Created Points, 49
+W0426 11:27:24.811424 1897262 Frontend.cpp:2281] Frontend: LOST: Fail ReInitialize
+W0426 11:29:18.445252 1897262 VRO_Offline.cpp:780] Data finished
+W0426 11:29:18.445379 1897262 VRO_Offline.cpp:1335] part 0 finished.
+W0426 11:29:18.445530 1897262 Backend.cpp:1084] Back-End: FINISH: Release Memory
+W0426 11:29:18.717886 1897262 Program.cpp:586] Program: Shutdown: data feed over
+W0426 11:29:34.656423 1897310 DynamicMap.cpp:2359] Atlas: FINISH:  Atlas mapping end

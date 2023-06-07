@@ -104,3 +104,17 @@ AutoDiffCostFunction 默认会获取 CostFunctor 对象的所有权，这样在 
 ## ceres::LocalParameterization
 
 [深入探索ceres::Problem](https://blog.csdn.net/jdy_lyy/article/details/119360492)
+
+## Problem::AddParameterBlock()
+  添加参数块，该函数有三个重载形式。**该函数不会对同一个指针指向的参数块进行重复添加（详见官网）**
+
+## Problem::AddResidualBlock()
+```C++
+ResidualBlockId Problem::AddResidualBlock(CostFunction *cost_function, LossFunction *loss_function, const vector<double*> parameter_blocks)
+
+template<typename Ts...>
+ResidualBlockId Problem::AddResidualBlock(CostFunction *cost_function, LossFunction *loss_function, double *x0, Ts... xs)¶
+```
+1. AddResidualBlock 中会检查参数块的大小。
+2. 如果没有显示调用 AddParameterBlock ， AddResidualBlock 会默认添加一个参数块。因此， AddParameterBlock 这个操作是可以避免的。
+3. 调用 AddResidualBlock 后 Problem 对象会获取 cost_function 和 loss_function 的所有权。因此当 Problem 被析构时这两个对象才会被析构。

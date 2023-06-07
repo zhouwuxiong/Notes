@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/dominant/Project_Dominant/test/transform/powell.cpp
+vector
+-
+ceres/ceres.h
+/dominant/Project_Dominant/test/transform/ceres/ceres.h
+gflags/gflags.h
+/dominant/Project_Dominant/test/transform/gflags/gflags.h
+glog/logging.h
+/dominant/Project_Dominant/test/transform/glog/logging.h
+

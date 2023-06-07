@@ -1,0 +1,194 @@
+206.7 15:24:10.362195
+213.3 15:26:27.021222
+213.3 15:26:28.869167
+206.7 15:27:29.885595
+206.7 15:28:04.917461
+213.3 15:28:39.235335
+220.0 15:28:40.163438
+226.7 15:28:42.722159
+226.7 15:28:44.628464
+226.7 15:29:22.334422
+206.2 15:29:23.352268
+226.7 15:29:23.850942
+220.0 15:29:24.859003
+240.0 15:29:25.308310
+
+206.7
+I0426 15:24:10.324231 2234979 Backend.cpp:316] Run_onceLocalBundleAdjustmentIntStatePRCeres 
+I0426 15:24:10.337303 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 1 
+I0426 15:24:10.338701 2235058 DynamicMap.cpp:940] --------- End Save KFBlock bin -------- 
+I0426 15:24:10.338749 2235058 DynamicMap.cpp:1601] Atlas: DeleteLoadingBlocks  
+I0426 15:24:10.366251 2235058 DynamicMap.cpp:2487]  AddBowDatabase 0,20 
+I0426 15:24:10.387137 2235058 DynamicMap.cpp:2504]  
+I0426 15:24:10.399551 2234979 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0650583 FINAL_COST = 1543.2 
+
+213.3
+I0426 15:26:27.005163 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_1 -------- 
+I0426 15:26:27.005214 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_2 -------- 
+I0426 15:26:27.005237 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_0_0 -------- 
+I0426 15:26:27.010682 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_0_1 -------- 
+I0426 15:26:27.020929 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_0_2 -------- 
+I0426 15:26:27.033361 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_1_0 -------- 
+I0426 15:26:27.036577 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_1_1 -------- 
+I0426 15:26:27.041112 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_0_0 -------- 
+I0426 15:26:27.043975 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_0_1 -------- 
+I0426 15:26:27.048538 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_0_3 -------- 
+I0426 15:26:27.057348 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_0 -------- 
+I0426 15:26:27.087682 2234979 Frontend.cpp:95] Frontend: Extract ORB, use 33.9432 ms 
+I0426 15:26:27.087777 2234979 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 15:26:27.088266 2235058 DynamicMap.cpp:2402] Atlas: AtlasWaitingBA: waiting ms: 66.484 
+I0426 15:26:27.090060 2235058 DynamicMap.cpp:905] ------- End Merge MapPoint Block -------- 
+I0426 15:26:27.090086 2235058 DynamicMap.cpp:951] ------- Start Save MPBlock bin -------- 
+
+206.7
+I0426 15:27:29.846060 2234979 Frontend.cpp:95] Frontend: Extract ORB, use 62.3091 ms 
+I0426 15:27:29.846221 2234979 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 15:27:29.869784 2235058 DynamicMap.cpp:2188] Atlas: SaveMPs: MPs Can Save:839 
+I0426 15:27:29.874402 2235058 DynamicMap.cpp:869] ------- Start Merge MapPoint Block -------- 
+I0426 15:27:29.874478 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_7_3_2 -------- 
+I0426 15:27:29.874516 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_7_3_1 -------- 
+I0426 15:27:29.874542 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_7_2_2 -------- 
+I0426 15:27:29.874568 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_2_1 -------- 
+I0426 15:27:29.885984 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_2_2 -------- 
+I0426 15:27:29.887732 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_3_1 -------- 
+I0426 15:27:29.892272 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_3_2 -------- 
+I0426 15:27:29.893010 2235058 DynamicMap.cpp:905] ------- End Merge MapPoint Block -------- 
+I0426 15:27:29.893030 2235058 DynamicMap.cpp:951] ------- Start Save MPBlock bin -------- 
+
+206.7
+I0426 15:28:04.960932 2235058 DynamicMap.cpp:2504]  
+I0426 15:28:04.973501 2234979 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0748093 FINAL_COST = 1128.57 
+
+213.3
+I0426 15:28:39.246757 2235058 DynamicMap.cpp:2188] Atlas: SaveMPs: MPs Can Save:766 
+I0426 15:28:39.253238 2235058 DynamicMap.cpp:869] ------- Start Merge MapPoint Block -------- 
+I0426 15:28:39.253314 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_-1_3 -------- 
+I0426 15:28:39.254911 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_-1_2 -------- 
+I0426 15:28:39.258834 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_-1_3 -------- 
+I0426 15:28:39.264540 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_-1_4 -------- 
+I0426 15:28:39.270515 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_0_2 -------- 
+
+220.0
+I0426 15:28:40.100914 2235058 DynamicMap.cpp:2402] Atlas: AtlasWaitingBA: waiting ms: 132.99 
+I0426 15:28:40.108039 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_0_2 -------- 
+I0426 15:28:40.133831 2234979 Frontend.cpp:95] Frontend: Extract ORB, use 32.5476 ms 
+I0426 15:28:40.137729 2234979 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 15:28:40.138837 2235058 DynamicMap.cpp:2402] Atlas: AtlasWaitingBA: waiting ms: 66.097 
+I0426 15:28:40.150826 2235058 DynamicMap.cpp:905] ------- End Merge MapPoint Block -------- 
+I0426 15:28:40.150940 2235058 DynamicMap.cpp:951] ------- Start Save MPBlock bin -------- 
+
+226.7
+I0426 15:28:42.710891 2234979 Frontend.cpp:95] Frontend: Extract ORB, use 88.344 ms 
+I0426 15:28:42.710999 2234979 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 15:28:42.799283 2234979 Frontend.cpp:95] Frontend: Extract ORB, use 17.9647 ms 
+I0426 15:28:42.799870 2234979 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+
+226.7
+I0426 15:28:44.602133 2235058 DynamicMap.cpp:1166] --------- End BlocksLoad -------- 
+I0426 15:28:44.603487 2234979 Backend.cpp:295] Run_onceSearchInNeighbors 
+I0426 15:28:44.616437 2235058 DynamicMap.cpp:857] ------- End Merge KeyFrame Block -------- 
+I0426 15:28:44.623454 2235058 DynamicMap.cpp:915] ------- Start Save KFBlock bin -------- 
+I0426 15:28:44.624750 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 9 
+I0426 15:28:44.638566 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 3 
+I0426 15:28:44.651013 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 9 
+I0426 15:28:44.651404 2234979 Backend.cpp:316] Run_onceLocalBundleAdjustmentIntStatePRCeres 
+I0426 15:28:44.665496 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 5 
+I0426 15:28:44.672919 2235058 DynamicMap.cpp:940] --------- End Save KFBlock bin -------- 
+I0426 15:28:44.673043 2235058 DynamicMap.cpp:1601] Atlas: DeleteLoadingBlocks  
+I0426 15:28:44.697027 2235058 DynamicMap.cpp:2487]  AddBowDatabase 0,20 
+
+226.7
+I0426 15:29:22.324918 2235058 DynamicMap.cpp:2504]  
+I0426 15:29:22.359084 2235058 DynamicMap.cpp:1240] Atlas Delete MapPoints: 1883 
+
+206.2
+I0426 15:29:23.320734 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_-1_1 -------- 
+I0426 15:29:23.368985 2234979 Frontend.cpp:95] Frontend: Extract ORB, use 69.3449 ms 
+I0426 15:29:23.369150 2234979 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 15:29:23.369212 2235058 DynamicMap.cpp:2402] Atlas: AtlasWaitingBA: waiting ms: 66.741 
+I0426 15:29:23.370762 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_-1_2 -------- 
+I0426 15:29:23.372351 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_-1_3 -------- 
+I0426 15:29:23.374389 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_0_3 -------- 
+I0426 15:29:23.395591 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_-1_1 -------- 
+I0426 15:29:23.397495 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_-1_2 -------- 
+
+226.7
+I0426 15:29:23.801074 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_3 -------- 
+I0426 15:29:23.801133 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_4 -------- 
+I0426 15:29:23.801162 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_5 -------- 
+I0426 15:29:23.801187 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_2_4 -------- 
+I0426 15:29:23.801210 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_1_2 -------- 
+I0426 15:29:23.802824 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_1_3 -------- 
+I0426 15:29:23.804618 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_1_4 -------- 
+I0426 15:29:23.805987 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_2_4 -------- 
+I0426 15:29:23.806052 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_2_6 -------- 
+I0426 15:29:23.806077 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_3_5 -------- 
+I0426 15:29:23.806097 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_3_6 -------- 
+I0426 15:29:23.806118 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_3_5 -------- 
+I0426 15:29:23.806136 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_4_7 -------- 
+I0426 15:29:23.806155 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_4_8 -------- 
+I0426 15:29:23.806177 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_5_8 -------- 
+I0426 15:29:23.806200 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_2_4 -------- 
+I0426 15:29:23.806221 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_3_6 -------- 
+I0426 15:29:23.806238 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_4_6 -------- 
+I0426 15:29:23.806270 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_4_9 -------- 
+I0426 15:29:23.806294 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_6_11 -------- 
+I0426 15:29:23.806316 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_5_4_11 -------- 
+I0426 15:29:23.806340 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_5_4_7 -------- 
+I0426 15:29:23.806366 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_5_7_9 -------- 
+I0426 15:29:23.806388 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_4_7 -------- 
+I0426 15:29:23.806409 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_8_17 -------- 
+I0426 15:29:23.806428 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_7_5_8 -------- 
+I0426 15:29:23.806449 2235058 DynamicMap.cpp:987] Atlas: LoadKFB: Start Load  
+I0426 15:29:23.815948 2235058 DynamicMap.cpp:1004] Atlas: LoadKFB: Load 8KFs 
+I0426 15:29:23.837855 2235058 DynamicMap.cpp:1166] --------- End BlocksLoad -------- 
+I0426 15:29:23.837941 2235058 DynamicMap.cpp:857] ------- End Merge KeyFrame Block -------- 
+I0426 15:29:23.837958 2235058 DynamicMap.cpp:915] ------- Start Save KFBlock bin -------- 
+I0426 15:29:23.844581 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 33 
+
+220.0
+I0426 15:29:24.808602 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_0_3 -------- 
+I0426 15:29:24.850379 2234979 Frontend.cpp:95] Frontend: Extract ORB, use 49.3948 ms 
+I0426 15:29:24.852699 2234979 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 15:29:24.852713 2235058 DynamicMap.cpp:2402] Atlas: AtlasWaitingBA: waiting ms: 71.448 
+I0426 15:29:24.860474 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_0_1_2 -------- 
+I0426 15:29:24.862877 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_11_14_11 -------- 
+I0426 15:29:24.863438 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_-1_1 -------- 
+I0426 15:29:24.865577 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_-1_2 -------- 
+I0426 15:29:24.870039 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_0_1 -------- 
+I0426 15:29:24.877974 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_0_2 -------- 
+I0426 15:29:24.886255 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_1 -------- 
+I0426 15:29:24.889784 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_2 -------- 
+I0426 15:29:24.891860 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_1_3 -------- 
+I0426 15:29:24.891929 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_2_3 -------- 
+I0426 15:29:24.891959 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_1_2_4 -------- 
+I0426 15:29:24.891978 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_1_2 -------- 
+I0426 15:29:24.893867 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_1_3 -------- 
+I0426 15:29:24.895583 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_1_4 -------- 
+I0426 15:29:24.896114 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_2_2 -------- 
+I0426 15:29:24.896152 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_2_3 -------- 
+I0426 15:29:24.896188 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_3_3 -------- 
+I0426 15:29:24.896214 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_3_4 -------- 
+I0426 15:29:24.896234 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_2_3_5 -------- 
+I0426 15:29:24.896250 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_2_3 -------- 
+I0426 15:29:24.896267 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_3_4 -------- 
+I0426 15:29:24.896283 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_4_4 -------- 
+I0426 15:29:24.896301 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_3_4_8 -------- 
+I0426 15:29:24.896318 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_4_5 -------- 
+I0426 15:29:24.896350 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_4_7 -------- 
+I0426 15:29:24.896368 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_4_5_5 -------- 
+I0426 15:29:24.896386 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_571_846_989 -------- 
+I0426 15:29:24.896404 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_6_7 -------- 
+I0426 15:29:24.896420 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_6_8 -------- 
+I0426 15:29:24.896440 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_6_8_8 -------- 
+I0426 15:29:24.896464 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_7_7_7 -------- 
+I0426 15:29:24.896486 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_8_11_10 -------- 
+I0426 15:29:24.896514 2235058 DynamicMap.cpp:1015] ------- Start Load MPBlock /dominant/Project_Dominant/results//2234979/Blocks/MPBlocks/MPB_8_8_8 -------- 
+I0426 15:29:24.896538 2235058 DynamicMap.cpp:987] Atlas: LoadKFB: Start Load  
+
+240.0
+I0426 15:29:25.300343 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 24 
+I0426 15:29:25.316650 2234979 Backend.cpp:316] Run_onceLocalBundleAdjustmentIntStatePRCeres 
+I0426 15:29:25.323225 2235058 KeyFrameBlock.cpp:23] {Save INFO}mspKeyFrames size = 25 
+I0426 15:29:25.348232 2235058 DynamicMap.cpp:940] --------- End Save KFBlock bin -------- 
+I0426 15:29:25.348743 2235058 DynamicMap.cpp:1601] Atlas: DeleteLoadingBlocks  

@@ -1,0 +1,2 @@
+86.7
+I0426 16:24:12.661406 2313237 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0883423 FINAL_COST = 990.655 

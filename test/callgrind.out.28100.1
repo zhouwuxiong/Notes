@@ -1,0 +1,111 @@
+# callgrind format
+version: 1
+creator: callgrind-3.20.0
+pid: 28100
+cmd:  ./a.out
+part: 1
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 0 - 2041510038
+desc: Trigger: Client Request
+
+positions: line
+events: Ir
+summary: 10146190000
+
+
+ob=(1) /lib/x86_64-linux-gnu/ld-2.27.so
+fl=(1) ???
+fn=(0) 0x0000000000001090
+cob=(5) /dominant/Project_Dominant/test/a.out
+cfi=(94) ???
+cfn=(340) (below main)
+calls=1 0 
+0 10146190000
+
+ob=(3) /lib/x86_64-linux-gnu/libc-2.27.so
+fl=(95) /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c
+fn=(342) (below main)
+cob=(5)
+cfi=(100) /dominant/Project_Dominant/test/callgrind.cpp
+cfn=(366) main
+calls=1 34 
+310 10146190000
+
+fl=(102) /build/glibc-S9d2JN/glibc-2.27/posix/../sysdeps/unix/sysv/linux/nanosleep.c
+fn=(376) nanosleep
+28 800000
++1 100000
+
+fl=(101) /build/glibc-S9d2JN/glibc-2.27/misc/../sysdeps/posix/usleep.c
+fn=(374) usleep
+25 100000
++1 100000
++6 100000
+-7 300000
++1 400000
++1 100000
+-1 200000
++1 200000
+-1 100000
++6 100000
+-6 200000
++6 100000
+cfi=(102)
+cfn=(376)
+calls=100000 -4 
+* 900000
++1 500000
+
+ob=(5)
+fl=(94)
+fn=(340)
+cob=(3)
+cfi=(95)
+cfn=(342)
+calls=1 137 
+0 10146190000
+
+fl=(100)
+fn=(366)
+39 130000
++1 30000
+cfn=(368) A::perf()
+calls=10000 -22 
+* 10146030000
+
+fn=(370) A::perf1()
+8 400000
++2 100000
++1 40200000
++2 80000000
+-2 20000000
++4 200000
+cob=(3)
+cfi=(101)
+cfn=(374)
+calls=100000 +10 
+* 3400000
+* 100000
++1 300000
+
+fn=(368)
+18 40000
++2 10000
++1 7000070000
++2 2000000000
+-2 1000000000
++4 10000
++1 770000
++2 300000
+cfn=(370)
+calls=100000 -20 
+* 144700000
+-2 100000
++4 30000
+
+totals: 10146190000

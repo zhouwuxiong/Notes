@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/dominant/Project_Dominant/test/transform/robust_curve_fit.cpp
+ceres/ceres.h
+/dominant/Project_Dominant/test/transform/ceres/ceres.h
+glog/logging.h
+/dominant/Project_Dominant/test/transform/glog/logging.h
+

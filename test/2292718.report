@@ -1,0 +1,90 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.2292718' (creator: callgrind-3.20.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 2041490303
+Trigger: Program termination
+Profiled target:  ./a.out (PID 2292718, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+144,700,000 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                    file:function
+--------------------------------------------------------------------------------
+144,700,000 (100.0%)  /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c:(below main) [/lib/x86_64-linux-gnu/libc-2.27.so]
+144,700,000 (100.0%)  /dominant/Project_Dominant/test/callgrind.cpp:main
+144,700,000 (100.0%)  ???:(below main) [/dominant/Project_Dominant/test/a.out]
+144,700,000 (100.0%)  ???:0x0000000000001090 [/lib/x86_64-linux-gnu/ld-2.27.so]
+144,700,000 (100.0%)  callgrind.cpp:A::perf() [/dominant/Project_Dominant/test/a.out]
+144,700,000 (100.0%)  callgrind.cpp:A::perf1() [/dominant/Project_Dominant/test/a.out]
+144,700,000 (100.0%)  callgrind.cpp:main [/dominant/Project_Dominant/test/a.out]
+  3,400,000 ( 2.35%)  /build/glibc-S9d2JN/glibc-2.27/misc/../sysdeps/posix/usleep.c:usleep [/lib/x86_64-linux-gnu/libc-2.27.so]
+    900,000 ( 0.62%)  /build/glibc-S9d2JN/glibc-2.27/posix/../sysdeps/unix/sysv/linux/nanosleep.c:nanosleep [/lib/x86_64-linux-gnu/libc-2.27.so]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: callgrind.cpp
+--------------------------------------------------------------------------------
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@ WARNING @@ WARNING @@ WARNING @@ WARNING @@ WARNING @@ WARNING @@ WARNING @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ Source file 'callgrind.cpp' is more recent than input file 'callgrind.out.2292718'.
+@ Annotations may not be correct.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Ir                  
+
+         .           #include <stdio.h>
+         .           #include <unistd.h>
+         .           #include <valgrind/callgrind.h>
+         .           
+         .           class A
+         .           {
+   400,000 ( 0.28%)  public:
+         .               void perf1()
+   100,000 ( 0.07%)      {
+60,200,000 (41.60%)          unsigned int i = 0;
+         .                   while (i < 200)
+80,000,000 (55.29%)          {
+         .                       int b = i++;
+   300,000 ( 0.21%)          }
+ 3,400,000 ( 2.35%)  => /build/glibc-S9d2JN/glibc-2.27/misc/../sysdeps/posix/usleep.c:usleep (100,000x)
+   300,000 ( 0.21%)          usleep(10);
+         .               }
+         .           
+         .               void perf()
+         .               {
+         .                   int i = 0;
+         .                   while (i++ < 100000)
+         .                   {
+         .                       int b = i;
+-- line 23 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /dominant/Project_Dominant/test/callgrind.cpp
+--------------------------------------------------------------------------------
+  No information has been collected for /dominant/Project_Dominant/test/callgrind.cpp
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  /build/glibc-S9d2JN/glibc-2.27/csu/../csu/libc-start.c
+  /build/glibc-S9d2JN/glibc-2.27/misc/../sysdeps/posix/usleep.c
+  /build/glibc-S9d2JN/glibc-2.27/posix/../sysdeps/unix/sysv/linux/nanosleep.c
+
+--------------------------------------------------------------------------------
+Ir                   
+--------------------------------------------------------------------------------
+141,300,000 (97.65%)  events annotated
+

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/dominant/Project_Dominant/test/transform/simple_bundle_adjuster.cpp
+cmath
+-
+cstdio
+-
+iostream
+-
+ceres/ceres.h
+/dominant/Project_Dominant/test/transform/ceres/ceres.h
+ceres/rotation.h
+/dominant/Project_Dominant/test/transform/ceres/rotation.h
+

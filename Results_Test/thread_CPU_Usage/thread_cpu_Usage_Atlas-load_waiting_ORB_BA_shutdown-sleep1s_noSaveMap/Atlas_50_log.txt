@@ -1,0 +1,607 @@
+run times:  1627
+66.7 16:20:30.230843
+73.3 16:21:01.623893
+66.7 16:21:38.816697
+53.3 16:21:39.251907
+75.0 16:22:22.925853
+60.0 16:23:13.424761
+62.5 16:23:13.908571
+66.7 16:23:42.992307
+73.3 16:24:12.126144
+86.7 16:24:12.609651
+60.0 16:25:17.191605
+60.0 16:25:17.665964
+53.3 16:25:18.125952
+80.0 16:25:54.903997
+
+66.7
+I0426 16:20:30.257624 2313237 Frontend.cpp:95] Frontend: Extract ORB, use 42.7506 ms 
+I0426 16:20:30.258039 2313237 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 16:20:30.288695 2313293 DynamicMap.cpp:1240] Atlas Delete MapPoints: 2342 
+
+73.3
+I0426 16:21:01.602834 2313237 Backend.cpp:316] Run_onceLocalBundleAdjustmentIntStatePRCeres 
+I0426 16:21:01.634629 2313293 DynamicMap.cpp:1240] Atlas Delete MapPoints: 1922 
+I0426 16:21:01.661044 2313293 DynamicMap.cpp:1304] Atlas Delete MapPoints succeed! 
+I0426 16:21:01.661646 2313293 DynamicMap.cpp:1181] --------- Atlas Delete KeyFrames ---------  
+I0426 16:21:01.674259 2313293 DynamicMap.cpp:1229] --------- Atlas Delete KeyFrames succeed!---------  
+I0426 16:21:01.677731 2313293 DynamicMap.cpp:2306] Atlas: DeleteMP&KF: Atlas release done!, KF delete remains: 39, MP delete remains:  1083 
+I0426 16:21:01.677816 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.677836 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:289,    
+I0426 16:21:01.677850 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:21:01.677863 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 276 
+I0426 16:21:01.677876 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.677888 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:276 
+I0426 16:21:01.677901 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.677925 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.677937 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:290,    
+I0426 16:21:01.677950 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:21:01.677963 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 276 
+I0426 16:21:01.677974 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.677985 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:276 
+I0426 16:21:01.677997 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678016 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678028 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:291,    
+I0426 16:21:01.678041 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:26,    
+I0426 16:21:01.678053 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 276 
+I0426 16:21:01.678066 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678084 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:276 
+I0426 16:21:01.678097 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678119 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678131 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:292,    
+I0426 16:21:01.678143 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:27,    
+I0426 16:21:01.678169 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 277 
+I0426 16:21:01.678180 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678192 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:277 
+I0426 16:21:01.678205 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678225 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678236 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:293,    
+I0426 16:21:01.678248 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:28,    
+I0426 16:21:01.678261 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 276 
+I0426 16:21:01.678272 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678284 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:276 
+I0426 16:21:01.678295 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678318 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678329 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:294,    
+I0426 16:21:01.678345 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:29,    
+I0426 16:21:01.678359 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 278 
+I0426 16:21:01.678370 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678381 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:278 
+I0426 16:21:01.678393 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678416 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678428 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:295,    
+I0426 16:21:01.678442 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:23,    
+I0426 16:21:01.678454 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 286 
+I0426 16:21:01.678465 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678478 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:286 
+I0426 16:21:01.678489 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678508 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678520 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:296,    
+I0426 16:21:01.678532 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:23,    
+I0426 16:21:01.678544 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 287 
+I0426 16:21:01.678556 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678567 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:287 
+I0426 16:21:01.678579 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678601 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678613 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:297,    
+I0426 16:21:01.678627 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:23,    
+I0426 16:21:01.678638 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 288 
+I0426 16:21:01.678650 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678663 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:288 
+I0426 16:21:01.678673 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678696 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.678709 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:298,    
+I0426 16:21:01.678721 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:29,    
+I0426 16:21:01.678735 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 288 
+I0426 16:21:01.678745 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.678757 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:288 
+I0426 16:21:01.678768 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.678788 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.679443 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:299,    
+I0426 16:21:01.679471 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:28,    
+I0426 16:21:01.679486 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 288 
+I0426 16:21:01.679497 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.679510 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:288 
+I0426 16:21:01.679522 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.679550 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.679563 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:300,    
+I0426 16:21:01.679575 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:29,    
+I0426 16:21:01.679589 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 288 
+I0426 16:21:01.679600 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.679611 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:288 
+I0426 16:21:01.679623 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.679646 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.679658 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:301,    
+I0426 16:21:01.679672 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:27,    
+I0426 16:21:01.679683 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 290 
+I0426 16:21:01.679697 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.679710 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:290 
+I0426 16:21:01.679723 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+I0426 16:21:01.679745 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:01.679759 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:302,    
+I0426 16:21:01.679771 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:22,    
+I0426 16:21:01.679783 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 292 
+I0426 16:21:01.679795 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 369 
+I0426 16:21:01.679806 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:292 
+I0426 16:21:01.679818 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 260, 280 ] 
+
+66.7
+I0426 16:21:38.806074 2313237 Frontend.cpp:95] Frontend: Extract ORB, use 30.2729 ms 
+I0426 16:21:38.806165 2313237 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+
+53.3
+I0426 16:21:39.200771 2313293 DynamicMap.cpp:2306] Atlas: DeleteMP&KF: Atlas release done!, KF delete remains: 41, MP delete remains:  977 
+I0426 16:21:39.200837 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.200855 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:461,    
+I0426 16:21:39.200870 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:17,    
+I0426 16:21:39.200882 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 452 
+I0426 16:21:39.200893 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.200906 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:452 
+I0426 16:21:39.200917 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.200938 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.200950 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:462,    
+I0426 16:21:39.200963 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:20,    
+I0426 16:21:39.200974 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 451 
+I0426 16:21:39.200986 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.201002 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:451 
+I0426 16:21:39.201014 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.201033 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.201045 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:463,    
+I0426 16:21:39.201056 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:22,    
+I0426 16:21:39.201068 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 452 
+I0426 16:21:39.201079 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.201090 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:452 
+I0426 16:21:39.201103 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.201123 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.201135 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:464,    
+I0426 16:21:39.201148 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:21:39.201164 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 455 
+I0426 16:21:39.201175 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.201186 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:455 
+I0426 16:21:39.201198 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.201216 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.201228 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:465,    
+I0426 16:21:39.201239 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:21:39.201252 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 456 
+I0426 16:21:39.201263 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.201274 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:456 
+I0426 16:21:39.201285 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.201304 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.201320 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:466,    
+I0426 16:21:39.201332 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:21:39.201344 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 456 
+I0426 16:21:39.201355 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.201366 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:456 
+I0426 16:21:39.201380 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.201400 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.201423 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:467,    
+I0426 16:21:39.201436 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:21:39.201448 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 456 
+I0426 16:21:39.201459 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.201471 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:456 
+I0426 16:21:39.201486 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.201505 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:21:39.201517 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:468,    
+I0426 16:21:39.201529 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:22,    
+I0426 16:21:39.201540 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 460 
+I0426 16:21:39.201551 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 468 
+I0426 16:21:39.201562 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:460 
+I0426 16:21:39.201573 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 440, 460 ] 
+I0426 16:21:39.235203 2313237 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0709973 FINAL_COST = 928.014 
+I0426 16:21:39.263080 2313237 Frontend.cpp:95] Frontend: Extract ORB, use 20.4348 ms 
+I0426 16:21:39.263154 2313237 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+
+75.0
+I0426 16:22:22.921353 2313293 DynamicMap.cpp:1240] Atlas Delete MapPoints: 1918 
+I0426 16:22:22.942231 2313293 DynamicMap.cpp:1304] Atlas Delete MapPoints succeed! 
+I0426 16:22:22.942654 2313293 DynamicMap.cpp:1181] --------- Atlas Delete KeyFrames ---------  
+
+60.0
+I0426 16:23:13.436875 2313237 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0792493 FINAL_COST = 953.203 
+I0426 16:23:13.481614 2313237 Frontend.cpp:95] Frontend: Extract ORB, use 24.7977 ms 
+I0426 16:23:13.481688 2313237 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+
+62.5
+I0426 16:23:13.905488 2313293 DynamicMap.cpp:1304] Atlas Delete MapPoints succeed! 
+I0426 16:23:13.905575 2313293 DynamicMap.cpp:1181] --------- Atlas Delete KeyFrames ---------  
+I0426 16:23:13.958845 2313293 DynamicMap.cpp:1229] --------- Atlas Delete KeyFrames succeed!---------  
+I0426 16:23:13.962661 2313293 DynamicMap.cpp:2306] Atlas: DeleteMP&KF: Atlas release done!, KF delete remains: 30, MP delete remains:  977 
+I0426 16:23:13.962754 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.962772 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:659,    
+I0426 16:23:13.962788 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:23,    
+I0426 16:23:13.962813 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 653 
+I0426 16:23:13.962834 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.962855 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:653 
+I0426 16:23:13.962872 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.962898 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.962913 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:660,    
+I0426 16:23:13.962929 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:23:13.962985 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 654 
+I0426 16:23:13.963021 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.963038 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:654 
+I0426 16:23:13.963050 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.963075 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.963088 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:661,    
+I0426 16:23:13.963101 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:23:13.963114 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 654 
+I0426 16:23:13.963125 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.963136 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:654 
+I0426 16:23:13.963150 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.963182 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.963201 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:662,    
+I0426 16:23:13.963218 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:23:13.963232 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 654 
+I0426 16:23:13.966766 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.966821 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:654 
+I0426 16:23:13.966841 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.966873 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.966890 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:663,    
+I0426 16:23:13.966908 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:23:13.966925 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 654 
+I0426 16:23:13.966939 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.966953 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:654 
+I0426 16:23:13.966967 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967000 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967013 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:664,    
+I0426 16:23:13.967025 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:27,    
+I0426 16:23:13.967038 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 654 
+I0426 16:23:13.967051 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967063 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:654 
+I0426 16:23:13.967075 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967095 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967108 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:665,    
+I0426 16:23:13.967120 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:26,    
+I0426 16:23:13.967132 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 654 
+I0426 16:23:13.967154 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967166 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:654 
+I0426 16:23:13.967178 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967201 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967213 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:666,    
+I0426 16:23:13.967226 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:23:13.967240 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 655 
+I0426 16:23:13.967252 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967263 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:655 
+I0426 16:23:13.967275 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967298 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967311 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:667,    
+I0426 16:23:13.967324 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:51,    
+I0426 16:23:13.967336 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 656 
+I0426 16:23:13.967350 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967360 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:656 
+I0426 16:23:13.967372 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967391 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967403 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:668,    
+I0426 16:23:13.967417 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:52,    
+I0426 16:23:13.967428 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 655 
+I0426 16:23:13.967440 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967453 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:655 
+I0426 16:23:13.967465 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967487 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967500 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:669,    
+I0426 16:23:13.967514 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:40,    
+I0426 16:23:13.967525 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 657 
+I0426 16:23:13.967537 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967550 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:657 
+I0426 16:23:13.967561 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967581 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967593 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:670,    
+I0426 16:23:13.967604 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:47,    
+I0426 16:23:13.967617 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 657 
+I0426 16:23:13.967629 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967640 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:657 
+I0426 16:23:13.967653 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967674 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967687 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:671,    
+I0426 16:23:13.967700 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:35,    
+I0426 16:23:13.967712 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 657 
+I0426 16:23:13.967723 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967736 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:657 
+I0426 16:23:13.967747 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967769 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967780 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:672,    
+I0426 16:23:13.967799 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:32,    
+I0426 16:23:13.967813 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 657 
+I0426 16:23:13.967824 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967837 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:657 
+I0426 16:23:13.967851 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967875 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967886 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:673,    
+I0426 16:23:13.967900 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:39,    
+I0426 16:23:13.967911 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 658 
+I0426 16:23:13.967922 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.967934 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:658 
+I0426 16:23:13.967947 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.967965 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.967978 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:674,    
+I0426 16:23:13.967989 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:35,    
+I0426 16:23:13.968003 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 659 
+I0426 16:23:13.968014 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.968025 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:659 
+I0426 16:23:13.968039 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.968058 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.968070 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:675,    
+I0426 16:23:13.968082 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:42,    
+I0426 16:23:13.968094 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 659 
+I0426 16:23:13.968106 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.968118 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:659 
+I0426 16:23:13.968130 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.968150 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.968161 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:676,    
+I0426 16:23:13.968174 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:57,    
+I0426 16:23:13.968186 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 658 
+I0426 16:23:13.968197 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.968209 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:658 
+I0426 16:23:13.968220 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.968240 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.968250 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:677,    
+I0426 16:23:13.968262 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:45,    
+I0426 16:23:13.968274 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 660 
+I0426 16:23:13.968286 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.968297 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:660 
+I0426 16:23:13.968309 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.968333 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.968344 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:678,    
+I0426 16:23:13.968356 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:44,    
+I0426 16:23:13.968369 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 660 
+I0426 16:23:13.968394 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.968407 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:660 
+I0426 16:23:13.968423 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.968457 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.968472 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:679,    
+I0426 16:23:13.968489 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:30,    
+I0426 16:23:13.968508 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 664 
+I0426 16:23:13.968526 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.968542 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:664 
+I0426 16:23:13.968560 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.968596 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.968614 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:680,    
+I0426 16:23:13.968631 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:34,    
+I0426 16:23:13.968649 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 660 
+I0426 16:23:13.968667 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.968684 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:660 
+I0426 16:23:13.968703 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.968734 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.968750 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:681,    
+I0426 16:23:13.968765 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:36,    
+I0426 16:23:13.968780 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 664 
+I0426 16:23:13.977197 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.977260 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:664 
+I0426 16:23:13.977277 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.977308 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.977324 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:682,    
+I0426 16:23:13.977339 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:38,    
+I0426 16:23:13.977355 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 667 
+I0426 16:23:13.977373 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.977613 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:667 
+I0426 16:23:13.977632 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.977660 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.977676 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:683,    
+I0426 16:23:13.977691 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:38,    
+I0426 16:23:13.977707 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 667 
+I0426 16:23:13.977722 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.977737 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:667 
+I0426 16:23:13.977752 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.977782 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.977800 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:684,    
+I0426 16:23:13.977815 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:37,    
+I0426 16:23:13.977829 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 667 
+I0426 16:23:13.977844 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.977860 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:667 
+I0426 16:23:13.977875 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.977900 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.977916 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:685,    
+I0426 16:23:13.977933 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:35,    
+I0426 16:23:13.977950 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 661 
+I0426 16:23:13.977964 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.977998 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:661 
+I0426 16:23:13.978013 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.978039 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.978053 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:686,    
+I0426 16:23:13.978070 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:39,    
+I0426 16:23:13.978085 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 668 
+I0426 16:23:13.978104 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.978119 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:668 
+I0426 16:23:13.978134 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+I0426 16:23:13.978163 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:13.978176 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:687,    
+I0426 16:23:13.978192 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:28,    
+I0426 16:23:13.978206 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 672 
+I0426 16:23:13.978222 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 727 
+I0426 16:23:13.978236 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:672 
+I0426 16:23:13.978252 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 640, 660 ] 
+
+66.7
+I0426 16:23:42.900055 2313237 Frontend.cpp:95] Frontend: Extract ORB, use 29.8061 ms 
+I0426 16:23:42.900161 2313237 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 16:23:42.905397 2313293 DynamicMap.cpp:1304] Atlas Delete MapPoints succeed! 
+I0426 16:23:42.905462 2313293 DynamicMap.cpp:1181] --------- Atlas Delete KeyFrames ---------  
+I0426 16:23:42.931353 2313293 DynamicMap.cpp:1229] --------- Atlas Delete KeyFrames succeed!---------  
+I0426 16:23:42.937459 2313293 DynamicMap.cpp:2306] Atlas: DeleteMP&KF: Atlas release done!, KF delete remains: 28, MP delete remains:  1041 
+I0426 16:23:42.937530 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:23:42.937546 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:729,    
+I0426 16:23:42.937561 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:23:42.937573 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 719 
+I0426 16:23:42.937585 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 803 
+I0426 16:23:42.937597 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:719 
+I0426 16:23:42.937608 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 680, 700 ] 
+I0426 16:23:42.951700 2313237 Backend.cpp:274] Run_onceProcessNewKeyFrame 
+
+73.3
+I0426 16:24:12.146638 2313237 Frontend.cpp:95] Frontend: Extract ORB, use 19.0112 ms 
+I0426 16:24:12.146699 2313237 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 16:24:12.185379 2313293 DynamicMap.cpp:1240] Atlas Delete MapPoints: 1703 
+
+86.7
+I0426 16:24:12.661406 2313237 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0883423 FINAL_COST = 990.655 
+
+60.0
+I0426 16:25:17.124549 2313237 Optimizer.cc:1773] Times LocalBundleAdjustment Finished, TIMECOST = 0.0719813 FINAL_COST = 909.362 
+I0426 16:25:17.178318 2313293 DynamicMap.cpp:1240] Atlas Delete MapPoints: 1753 
+I0426 16:25:17.199391 2313293 DynamicMap.cpp:1304] Atlas Delete MapPoints succeed! 
+I0426 16:25:17.199450 2313293 DynamicMap.cpp:1181] --------- Atlas Delete KeyFrames ---------  
+
+60.0
+I0426 16:25:17.627056 2313237 Frontend.cpp:95] Frontend: Extract ORB, use 30.4484 ms 
+I0426 16:25:17.627429 2313237 Frontend.cpp:2120] Front-End: ALL: Start Tracking 
+I0426 16:25:17.644277 2313293 DynamicMap.cpp:1229] --------- Atlas Delete KeyFrames succeed!---------  
+I0426 16:25:17.647807 2313293 DynamicMap.cpp:2306] Atlas: DeleteMP&KF: Atlas release done!, KF delete remains: 33, MP delete remains:  1052 
+I0426 16:25:17.647903 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.647922 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:985,    
+I0426 16:25:17.647936 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:29,    
+I0426 16:25:17.647948 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 971 
+I0426 16:25:17.647960 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.647972 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:971 
+I0426 16:25:17.647984 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648007 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648020 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:986,    
+I0426 16:25:17.648032 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:25:17.648043 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 977 
+I0426 16:25:17.648054 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648065 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:977 
+I0426 16:25:17.648077 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648095 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648106 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:987,    
+I0426 16:25:17.648118 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:25:17.648129 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 977 
+I0426 16:25:17.648142 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648159 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:977 
+I0426 16:25:17.648170 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648192 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648203 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:988,    
+I0426 16:25:17.648216 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:27,    
+I0426 16:25:17.648227 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 977 
+I0426 16:25:17.648238 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648249 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:977 
+I0426 16:25:17.648260 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648279 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648291 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:989,    
+I0426 16:25:17.648303 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:25:17.648313 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 977 
+I0426 16:25:17.648324 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648335 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:977 
+I0426 16:25:17.648347 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648368 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648380 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:990,    
+I0426 16:25:17.648391 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:25:17.648404 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 979 
+I0426 16:25:17.648416 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648427 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:979 
+I0426 16:25:17.648438 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648459 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648471 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:991,    
+I0426 16:25:17.648483 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:25,    
+I0426 16:25:17.648494 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 979 
+I0426 16:25:17.648505 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648523 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:979 
+I0426 16:25:17.648535 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648571 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648581 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:992,    
+I0426 16:25:17.648592 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:25:17.648603 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 979 
+I0426 16:25:17.648613 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648624 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:979 
+I0426 16:25:17.648635 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648655 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648669 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:993,    
+I0426 16:25:17.648681 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:25:17.648692 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 979 
+I0426 16:25:17.648703 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648713 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:979 
+I0426 16:25:17.648725 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648742 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648753 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:994,    
+I0426 16:25:17.648764 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:23,    
+I0426 16:25:17.648775 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 980 
+I0426 16:25:17.648787 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648797 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:980 
+I0426 16:25:17.648808 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648825 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648836 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:995,    
+I0426 16:25:17.648847 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:25:17.648859 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 980 
+I0426 16:25:17.648869 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648880 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:980 
+I0426 16:25:17.648890 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648913 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.648926 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:996,    
+I0426 16:25:17.648936 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:25:17.648947 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 980 
+I0426 16:25:17.648958 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.648969 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:980 
+I0426 16:25:17.648979 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.648999 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649010 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:997,    
+I0426 16:25:17.649022 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:23,    
+I0426 16:25:17.649034 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 981 
+I0426 16:25:17.649044 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649055 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:981 
+I0426 16:25:17.649065 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649083 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649094 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:998,    
+I0426 16:25:17.649106 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:25:17.649134 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 981 
+I0426 16:25:17.649147 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649160 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:981 
+I0426 16:25:17.649171 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649190 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649202 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:999,    
+I0426 16:25:17.649214 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:28,    
+I0426 16:25:17.649225 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 980 
+I0426 16:25:17.649236 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649247 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:980 
+I0426 16:25:17.649258 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649277 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649288 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:1000,    
+I0426 16:25:17.649300 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:26,    
+I0426 16:25:17.649312 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 985 
+I0426 16:25:17.649322 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649333 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:985 
+I0426 16:25:17.649344 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649363 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649374 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:1001,    
+I0426 16:25:17.649386 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:26,    
+I0426 16:25:17.649399 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 984 
+I0426 16:25:17.649411 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649423 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:984 
+I0426 16:25:17.649434 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649453 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649464 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:1002,    
+I0426 16:25:17.649477 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:24,    
+I0426 16:25:17.649487 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 987 
+I0426 16:25:17.649499 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649509 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:987 
+I0426 16:25:17.649520 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649539 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649550 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:1003,    
+I0426 16:25:17.649562 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:39,    
+I0426 16:25:17.649574 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 986 
+I0426 16:25:17.649585 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649596 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:986 
+I0426 16:25:17.649607 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649626 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649636 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:1004,    
+I0426 16:25:17.649649 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:37,    
+I0426 16:25:17.649663 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 988 
+I0426 16:25:17.649674 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649685 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:988 
+I0426 16:25:17.649696 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+I0426 16:25:17.649715 2313293 DynamicMap.cpp:2142] Atlas: CheckStatus: System Normal 
+I0426 16:25:17.649732 2313293 KeyFrame.cpp:1015] KeyFrame: GetConv: CurrKFID:1005,    
+I0426 16:25:17.649744 2313293 KeyFrame.cpp:1022] KeyFrame: GetConv: CovKF size:32,    
+I0426 16:25:17.649755 2313293 KeyFrame.cpp:1034] KeyFrame: GetConv: CovKF MinID: 997 
+I0426 16:25:17.649766 2313293 DynamicMap.cpp:113] Atlas: CheckSave: local KF 1050 
+I0426 16:25:17.649777 2313293 DynamicMap.cpp:121] Atlas: CheckSave: local MIN KF:997 
+I0426 16:25:17.649788 2313293 DynamicMap.cpp:124] Atlas: CheckSave: CheckWindows KF ID [ 960, 980 ] 
+
+53.3
+I0426 16:25:18.133895 2313237 Backend.cpp:274] Run_onceProcessNewKeyFrame 
+I0426 16:25:18.155969 2313237 Backend.cpp:279] Run_onceMapPointCulling 
+I0426 16:25:18.158540 2313237 Backend.cpp:285] Run_onceCreateNewMapPoints 
+I0426 16:25:18.162654 2313293 DynamicMap.cpp:1240] Atlas Delete MapPoints: 1773 
+I0426 16:25:18.181751 2313293 DynamicMap.cpp:1304] Atlas Delete MapPoints succeed! 
+I0426 16:25:18.181840 2313293 DynamicMap.cpp:1181] --------- Atlas Delete KeyFrames ---------  
+
+80.0
+I0426 16:25:54.925717 2313293 DynamicMap.cpp:1240] Atlas Delete MapPoints: 1845 
+I0426 16:25:54.943799 2313293 DynamicMap.cpp:1304] Atlas Delete MapPoints succeed! 
+I0426 16:25:54.943851 2313293 DynamicMap.cpp:1181] --------- Atlas Delete KeyFrames ---------  

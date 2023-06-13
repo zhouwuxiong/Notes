@@ -118,3 +118,19 @@ ResidualBlockId Problem::AddResidualBlock(CostFunction *cost_function, LossFunct
 1. AddResidualBlock 中会检查参数块的大小。
 2. 如果没有显示调用 AddParameterBlock ， AddResidualBlock 会默认添加一个参数块。因此， AddParameterBlock 这个操作是可以避免的。
 3. 调用 AddResidualBlock 后 Problem 对象会获取 cost_function 和 loss_function 的所有权。因此当 Problem 被析构时这两个对象才会被析构。
+
+## Ceres 中的线性求解器类型（linear_solver_type）
+```text
+DENSE_QR：使用稠密QR分解方法求解线性方程组。适用于内存足够的小规模问题，求解速度较快。，基于 Eigen
+
+DENSE_SCHUR：使用Schur补方法进行求解。适用于大规模问题，但内存消耗较大。，基于 Eigen
+
+SPARSE_NORMAL_CHOLESKY：使用稀疏Cholesky分解方法求解正规方程。适用于具有稀疏结构的问题，例如SLAM问题，但求解速度较慢。
+
+SPARSE_SCHUR：使用Schur补方法进行求解，其中Hessian矩阵的块对角线部分使用稀疏Cholesky分解方法，而其他部分使用稠密QR分解方法。适用于具有稀疏结构的大规模问题。基于cholmod
+
+CGNR：共轭梯度法（Conjugate Gradient Normal Residual）。适用于具有稀疏结构的问题，但求解速度较慢。
+
+DENSE_NORMAL_CHOLESKY：使用稠密Cholesky分解方法求解正规方程。适用于内存足够的小规模问题。
+
+```
